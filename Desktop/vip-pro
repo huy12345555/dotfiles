@@ -1,0 +1,30 @@
+-- usefull: fuck, cheat, cmatrix, sl, upower -d
+
+-- run docker: systemctl enable docker.socket docker.service containerd.service
+  systemctl start docker.socket docker.service containerd.service
+
+-- 7zip: 7z e <file_name> sau đó chọn No
+  
+-- github: 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
+
+-- Run WARP
+  warp-cli connect; curl https://www.cloudflare.com/cdn-cgi/trace/ 
+  - and verify that warp=on
+ 
+-- Mất cmn wifi
+  thử restart
+  - Nếu ko đc: cd software/; dpkg -i ./backport-iwlwifi-dkms_8613-0ubuntu2_all.deb
+  
+-- Bật ethernet: sudo ifconfig enp2s0 up
+
+-- Dọn dẹp apt source list: sudo ./software/aptsources-cleanup.pyz
+  
+-- Nếu tải gì đó mà chưa hiện: sudo fc-cache -f -v
+  
+-- Kich hoat bluetooth: systemctl enable bluetooth; systemctl start bluetooth
+  
+-- Chuyen file tu linux sang iphone khi ko co wifi
+  Cam day sac
+  Files -> Documents on Zeldris/Brave/Downloads -> paste
+  
+-- Unlock a folder: sudo su; chmod ugo+rwx <foldername>

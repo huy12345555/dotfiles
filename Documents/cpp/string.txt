@@ -1,0 +1,44 @@
+char TenChuoi[n]
+độ dài chuỗi = n - 1 
+
+gets() <=> cin
+puts() <=> cout + endl
+
+<string.h>
+{
+  strlen(s): độ dài chuỗi
+  strcat(s1, s2): chèn s2 -> s1  => s1s2 
+  strcpy(s1, s2): copy s2 -> s1  => s2
+  strstr(s1, s2): tìm s2 trong s1  (ko tìm thấy => NULL)
+  strlwr(s):  => chuỗi thường
+  strupr(s):  => chuỗi in hoa
+  strrev(s): đảo ngược chuỗi
+  
+  strcmp(s1, s2): Hàm so sánh hai chuỗi phân biệt chữ hoa thường
+  stricmp(s1, s2): Hàm so sánh hai chuỗi KO phân biệt chữ hoa thường
+    =>     âm: s1 < s2
+            0: s1 == s2
+        dương: s1 > s2
+
+  strtok(s1, s2: Hàm trả về chuỗi đầu tiên sau khi cắt s1 bởi các ký tự có trong s2
+    Ví dụ :
+      s1 = “nguyen van quan,tran teo”;
+      char *p = strtok(s1," ,");  //có dấu phẩu và dấu cách
+      p="nguyen". 
+      * Nếu muốn cắt tiếp chuỗi thì ta dùng strtok(NULL," ,") 
+        =>khi đó sẽ cắt chuỗi ban đầu bắt đầu từ vị trí mà trước đó đã dừng lại (nghĩa là p lúc này sẽ bằng "van")
+}
+
+<ctype.h>
+{
+  isalnum(c): trả về đúng (!= 0) nếu c là kí tự kiểu chữ (alphabet) hoặc kiểu số (mumeric).
+  isalpha(c): trả về đúng nếu c là kí tự kiểu chữ (alphabet).
+  isdigit(c): trả về đúng nếu c là kí tự kiểu số (mumeric).
+  toupper(c): chuyển c thành chữ hoa.
+  tolower(c): chuyển c thành chữ thường.
+  isalpha(c): trả về đúng nếu c là chữ cái.
+  islower(c): trả về đúng nếu c là chữ cái thường.
+  isupper(c): trả về đúng nếu c là chữ cái hoa.
+  isspace(c): trả về đúng nếu c là dấu cách, dấu \n, dấu về đầu dòng \r, tab \t
+}
+

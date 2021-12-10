@@ -1,0 +1,40 @@
+- 1 Độ phức tạp: https://elearning.tdmu.edu.vn/mod/quiz/review.php?attempt=446149&cmid=368752
+  2_1 Tìm kiếm: https://elearning.tdmu.edu.vn/mod/quiz/review.php?attempt=541555&cmid=371280
+  2_2 Sắp xếp: https://elearning.tdmu.edu.vn/mod/quiz/review.php?attempt=542360&cmid=380692
+  3 Linked list: https://elearning.tdmu.edu.vn/mod/quiz/review.php?attempt=541591&cmid=382309
+  4 Stack, Queue: https://elearning.tdmu.edu.vn/mod/quiz/review.php?attempt=541608&cmid=383279
+  5 Binary Tree: https://elearning.tdmu.edu.vn/mod/quiz/review.php?attempt=555849&cmid=383280
+  
+- LNR: trung thứ tự
+  NLR: tiền thứ t
+  LRN: hậu thứ tự
+
+- Trong lưu trữ dữ liệu kiểu Queue (Q) dưới dạng mảng nối vòng, giả sử F là con trỏ trỏ tới lối trước của Q, R là con trỏ trỏ tới lối sau của Q. Điều kiện F=R=0 nghĩa là gì trong các phương án sau?
+  Queue rỗng
+  
+- Với dữ liệu đầu vào (n) đủ nhỏ, ta nên sử dụng phương pháp sắp xếp nào sau đây?
+  Sắp xếp lựa chọn(selection sort).
+
+- Với dữ liệu đầu vào (n) lớn, ta nên sử dụng phương pháp sắp xếp nào sau đây?
+  Sắp xếp đống(Heap sort) hoặc Sắp xếp nhanh(quick sort).
+
+- Trong các giải thuật sắp xếp, giải thuật nào sau đây áp dụng phương pháp Chia để trị?
+  Quick sort, Merge sort.
+
+- Hãy cho biết ý tưởng nào sau đây nói về phương pháp sắp xếp vun đống (Heap sort)?
+  Lần lượt tạo đống cho cây nhị phân (phần tử gốc có giá trị lớn nhất) và loại phần tử gốc ra khỏi cây đưa vào dãy sắp xếp.
+
+- Hãy cho biết tính chất nào sau đây là của cây nhị phân tìm kiếm?
+  Cây nhị phân mà mỗi nút trong cây đều thoả tính chất: giá trị của nút cha nhỏ hơn mọi nút trên cây con trái và lớn hơn mọi nút trên cây con phải của nó.
+  
+- Khi lưu trữ cây nhị phân dưới dạng mảng, nếu vị trí của nút cha là i thì vị trí của nút con trái/phải là gì trong các phương án sau?
+  2*i or (2*i + 1)
+  
+- Trong biểu diễn dữ liệu dưới dạng cây, Khái niệm nào sau đây là cấp của cây?
+  Là cấp cao nhất của một nút trên cây.
+  
+- Trong biểu diễn dữ liệu dưới dạng cây, nút có cấp bằng 0 gọi là nút gì trong các phương án sau?
+  Là nút lá. 
+  
+- 
+
