@@ -182,4 +182,7 @@ command -v lsd > /dev/null && alias la='ls -a'
 command -v lsd > /dev/null && alias lla='ls -la'
 command -v lsd > /dev/null && alias lt='ls --tree'
 
+[[ -s /home/giatrung2012/.autojump/etc/profile.d/autojump.sh ]] && source /home/giatrung2012/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
 

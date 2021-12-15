@@ -1,4 +1,7 @@
--- usefull: fuck, cheat, cmatrix, sl, upower -d
+-- usefull: fuck, cheat, cmatrix, sl, upower -d, f <name_folder>
+
+-- tạo shortcut: ln -s ~/.dotfiles/.zshrc ~/.zshrc
+    tạo ~/.zshrc link tới ~/.dotfiles/.zshrc
 
 -- run docker: systemctl enable docker.socket docker.service containerd.service
   systemctl start docker.socket docker.service containerd.service
