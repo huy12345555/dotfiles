@@ -1,4 +1,4 @@
-+0.64 diem doc ta => 7.74
++0.64 diem doc ta => 7.7
 
 +0.5 diem nghe ta => 7.5
 
@@ -6,3 +6,17 @@
   2) +0.25 
   3) +0.75
   4) +0.25
+  
+  
+TH1:
+nghe: 7.5
+doc: 7.5
+viet: 7.7
+noi: 7.5
+
+
+TH2:
+nghe: 7
+doc: 7
+viet: 7.2
+noi: 7
