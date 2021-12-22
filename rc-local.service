@@ -1,0 +1,8 @@
+[Unit]
+Description=gboost
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/home/giatrung2012/software/gboost.sh
+
