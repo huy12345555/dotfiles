@@ -3,8 +3,6 @@
 -- tạo shortcut: ln -s ~/.dotfiles/.zshrc ~/.zshrc
     tạo ~/.zshrc link tới ~/.dotfiles/.zshrc
 
--- run docker: systemctl start docker.socket docker.service containerd.service
-
 -- 7zip: 7z e <file_name> sau đó chọn No
   
 -- github: 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
@@ -12,12 +10,6 @@
 -- Run WARP
   warp-cli connect; curl https://www.cloudflare.com/cdn-cgi/trace/ 
   - and verify that warp=on
- 
--- Mất cmn wifi
-  thử restart
-  - Nếu ko đc: cd software/; dpkg -i ./backport-iwlwifi-dkms_8613-0ubuntu2_all.deb
-  
--- Bật ethernet: sudo ifconfig enp2s0 up
   
 -- Nếu tải gì đó mà chưa hiện: sudo fc-cache -f -v
   
