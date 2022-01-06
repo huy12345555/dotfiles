@@ -1,15 +1,14 @@
 #!/bin/sh
 
-sudo pacman -Syu
+yes | sudo pacman -Syu
+yes | sudo pacman -S - < pkglist.txt
 
 # Disable bd brochot
-sudo pacman -S msr-tools
 sudo modprobe msr
 sudo rdmsr 0x1FC
 sudo wrmsr 0x1FC 0xFFFFE
 
 # Little setup throttlestop
-sudo pacman -S python-pip
 sudo pip3 install throttlestop
 echo "Go to https://github.com/agoose77/throttlestop then continue from Install service..."
 
@@ -29,10 +28,13 @@ cd /
 chmod +x $HOME/software/boost
 chmod +x $HOME/software/boost.sh
 chmod +x $HOME/software/gboost.sh
-chmod ugo+rwx /lib/systemd/system-sleep/
-cp $HOME/software/boost /lib/systemd/system-sleep/
-chmod ugo+rwx /etc/systemd/system/
-cp $HOME/software/boost.service /etc/systemd/system/
+sudo chmod ugo+rwx /lib/systemd/system-sleep/
+mv $HOME/software/boost /lib/systemd/system-sleep/
+sudo chmod ugo+rwx /etc/systemd/system/
+mv $HOME/software/boost.service /etc/systemd/system/
 sudo systemctl enable boost.service
 sudo systemctl start boost.service
 
+# Disable bluetooth
+systemctl stop bluetooth
+systemctl disable bluetooth

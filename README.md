@@ -1,1 +1,2 @@
-run ./install.sh
+- Restore: ./restore.sh
+- Backup: ./backup.sh
