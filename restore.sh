@@ -1,12 +1,15 @@
 #!/bin/sh
 
 yes | sudo pacman -Syu
-yes | sudo pacman -S - < pkglist.txt
 
 # Disable bd brochot
+yes | sudo pacman -S msr-tools
 sudo modprobe msr
 sudo rdmsr 0x1FC
 sudo wrmsr 0x1FC 0xFFFFE
+
+# Install some official package
+yes | sudo pacman -S - < pkglist.txt
 
 # Little setup throttlestop
 sudo pip3 install throttlestop

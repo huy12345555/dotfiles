@@ -1,4 +1,3 @@
-msr-tools
 python-pip
 brave
 neovim
@@ -13,6 +12,9 @@ vlc
 python-pynvim
 xcip
 gnome-calendar
+gimp
+cheese
+xarchiver
 
 
 
