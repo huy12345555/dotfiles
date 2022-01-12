@@ -1,0 +1,4 @@
+firefox
+gthumb
+gnome-screenshot
+totem

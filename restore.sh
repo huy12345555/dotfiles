@@ -8,8 +8,11 @@ sudo modprobe msr
 sudo rdmsr 0x1FC
 sudo wrmsr 0x1FC 0xFFFFE
 
-# Install some official package
+# Install some official packages
 yes | sudo pacman -S - < pkglist.txt
+
+# Remove some packages
+yes | sudo pacman -R - < pkglist-remove.txt
 
 # Little setup throttlestop
 sudo pip3 install throttlestop
@@ -17,14 +20,14 @@ echo "Go to https://github.com/agoose77/throttlestop then continue from Install 
 
 # Setup folder
 cp -R software/ $HOME/
-cp -R Pictures/ $HOME/
-cp -R Documents/ $HOME/
-cp -R Music/ $HOME/
-cp -R Desktop/ $HOME/
-cp -R workspace/ $HOME/
-cp -R .themes/ $HOME/
-cp -R .icons/ $HOME/
-cp -R nvim/ $HOME/.config/
+mv -R Pictures/ $HOME/
+mv -R Documents/ $HOME/
+mv -R Music/ $HOME/
+mv -R Desktop/ $HOME/
+mv -R workspace/ $HOME/
+mv -R .themes/ $HOME/
+mv -R .icons/ $HOME/
+cp -R .config/nvim/ $HOME/.config/
 
 # Setup boost
 cd /

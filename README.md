@@ -1,2 +1,3 @@
 - Restore: ./restore.sh
 - Backup: ./backup.sh
+- Self-build pkgbuild.txt with Packages Manager UI

@@ -1,0 +1,9 @@
+wps-office
+ttf-wps-fonts
+ttf-ms-fonts
+visual-studio-code-bin
+google-chrome
+ibus-bamboo
+authy
+xdman
+
