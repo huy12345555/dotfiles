@@ -6,6 +6,7 @@ cp -R $HOME/Pictures/ $HOME/backup/
 cp -R $HOME/Documents/ $HOME/backup/
 cp -R $HOME/Music/ $HOME/backup/
 cp -R $HOME/Desktop/ $HOME/backup/
+cp -R $HOME/Downloads/ $HOME/backup/
 cp -R $HOME/workspace/ $HOME/backup/
 cp -R $HOME/.themes/ $HOME/backup/
 cp -R $HOME/.icons/ $HOME/backup/

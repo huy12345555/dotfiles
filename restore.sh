@@ -27,6 +27,7 @@ mv -R Desktop/ $HOME/
 mv -R workspace/ $HOME/
 mv -R .themes/ $HOME/
 mv -R .icons/ $HOME/
+mv -R Downloads/ $HOME/
 cp -R .config/nvim/ $HOME/.config/
 
 # Setup boost
