@@ -24,7 +24,6 @@ mv -R Pictures/ $HOME/
 mv -R Documents/ $HOME/
 mv -R Music/ $HOME/
 mv -R Desktop/ $HOME/
-mv -R workspace/ $HOME/
 mv -R .themes/ $HOME/
 mv -R .icons/ $HOME/
 mv -R Downloads/ $HOME/

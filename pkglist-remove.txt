@@ -2,3 +2,4 @@ firefox
 gthumb
 gnome-screenshot
 totem
+file-roller

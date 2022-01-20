@@ -6,4 +6,4 @@ google-chrome
 ibus-bamboo
 authy
 xdman
-
+nerd-fonts-jetbrains-mono

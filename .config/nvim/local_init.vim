@@ -55,6 +55,4 @@ autosave.setup(
 EOF
 
 
-" Neovide
-let g:neovide_transparency=0.95
-let g:neovide_cursor_vfx_mode="railgun"
+

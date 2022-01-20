@@ -1,7 +1,7 @@
 python-pip
-brave
+brave-browser
 neovim
-ttf-fira-code
+ttf-jetbrains-mono
 jdk-openjdk
 flameshot
 nodejs
@@ -15,6 +15,7 @@ gnome-calendar
 gimp
 cheese
 xarchiver
+telegram-desktop
 
 
 
