@@ -7,3 +7,5 @@ ibus-bamboo
 authy
 xdman
 nerd-fonts-jetbrains-mono
+ngrok
+cloudflare-warp-bin
