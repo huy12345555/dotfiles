@@ -26,7 +26,6 @@ mv -R Music/ $HOME/
 mv -R Desktop/ $HOME/
 mv -R .themes/ $HOME/
 mv -R .icons/ $HOME/
-cp -R .config/nvim/ $HOME/.config/
 
 # Setup boost
 cd /

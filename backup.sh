@@ -10,9 +10,6 @@ cp -R $HOME/.themes/ $HOME/backup/
 cp -R $HOME/.icons/ $HOME/backup/
 
 # Backup files
-cp $HOME/.config/nvim/init.vim $HOME/backup/.config/nvim/
-cp $HOME/.config/nvim/local_init.vim $HOME/backup/.config/nvim/
-cp $HOME/.config/nvim/local_bundles.vim $HOME/backup/.config/nvim/
 cp $HOME/.zshrc $HOME/backup/
 cp $HOME/.zhistory $HOME/backup/
 
