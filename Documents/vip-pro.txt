@@ -2,8 +2,6 @@
 
 -- tạo shortcut: ln -s ~/.dotfiles/.zshrc ~/.zshrc
     tạo ~/.zshrc link tới ~/.dotfiles/.zshrc
-
--- github: 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
   
 -- Nếu tải font mà chưa hiện: sudo fc-cache -f -v
   

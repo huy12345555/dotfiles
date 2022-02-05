@@ -17,6 +17,7 @@ cheese
 xarchiver
 telegram-desktop
 ctags
+github-cli
 
 
 

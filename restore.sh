@@ -18,14 +18,16 @@ yes | sudo pacman -R - < pkglist-remove.txt
 sudo pip3 install throttlestop
 echo "Go to https://github.com/agoose77/throttlestop then continue from Install service..."
 
-# Setup folder
+# Setup folders and files
 cp -R software/ $HOME/
-mv -R Pictures/ $HOME/
-mv -R Documents/ $HOME/
-mv -R Music/ $HOME/
-mv -R Desktop/ $HOME/
-mv -R .themes/ $HOME/
-mv -R .icons/ $HOME/
+cp -R Pictures/ $HOME/
+cp -R Documents/ $HOME/
+cp -R Music/ $HOME/
+cp -R Desktop/ $HOME/
+cp -R .themes/ $HOME/
+cp -R .icons/ $HOME/
+cp .zhistory $HOME/
+cp .gitconfig $HOME/
 
 # Setup boost
 cd /

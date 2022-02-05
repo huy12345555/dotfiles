@@ -10,6 +10,5 @@ cp -R $HOME/.themes/ $HOME/backup/
 cp -R $HOME/.icons/ $HOME/backup/
 
 # Backup files
-cp $HOME/.zshrc $HOME/backup/
 cp $HOME/.zhistory $HOME/backup/
-
+cp $HOME/.gitconfig $HOME/backup/
