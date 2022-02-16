@@ -3,3 +3,5 @@ gthumb
 gnome-screenshot
 totem
 file-roller
+gnome-calculator
+gnome-system-monitor

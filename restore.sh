@@ -24,7 +24,6 @@ cp -R Pictures/ $HOME/
 cp -R Documents/ $HOME/
 cp -R Music/ $HOME/
 cp -R Desktop/ $HOME/
-cp -R .themes/ $HOME/
 cp -R .icons/ $HOME/
 cp .zhistory $HOME/
 cp .gitconfig $HOME/

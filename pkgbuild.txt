@@ -8,3 +8,5 @@ authy
 xdman
 nerd-fonts-jetbrains-mono
 ngrok
+lua-language-server-git
+decoder

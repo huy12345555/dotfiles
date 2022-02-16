@@ -6,7 +6,6 @@ jdk-openjdk
 flameshot
 nodejs
 eog
-npm
 neofetch
 vlc
 python-pynvim
@@ -18,6 +17,11 @@ xarchiver
 telegram-desktop
 ctags
 github-cli
+tree
+qalculate-gtk
+yarn
+btop
+drawing
 
 
 
