@@ -1,4 +1,4 @@
--- usefull: fuck, cheat, cmatrix, sl, upower -d, f <name_folder>, cmus, figlet "", cowsay "", lolcat, neofetch, 
+-- usefull: upower -d, cmus, btop, neofetch
 
 -- tạo shortcut: ln -s ~/.dotfiles/.zshrc ~/.zshrc
     tạo ~/.zshrc link tới ~/.dotfiles/.zshrc
