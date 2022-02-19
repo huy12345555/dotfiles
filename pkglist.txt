@@ -22,7 +22,6 @@ qalculate-gtk
 yarn
 btop
 drawing
-
-
-
-
+intellij-idea-community-edition
+bash-language-server
+lua-language-server

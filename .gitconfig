@@ -8,3 +8,4 @@
 	ui = auto
 [core]
 	editor = nvim
+	autocrlf = input
