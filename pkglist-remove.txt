@@ -1,4 +1,8 @@
 firefox
+htop
+bashtop
+atril
+
 gthumb
 gnome-screenshot
 totem

@@ -2,10 +2,13 @@ wps-office
 ttf-wps-fonts
 ttf-ms-fonts
 visual-studio-code-bin
-google-chrome
+brave-bin
 ibus-bamboo
+google-chrome
 authy
+ngrok
+evince-light
+
 xdman
 nerd-fonts-jetbrains-mono
-ngrok
 decoder

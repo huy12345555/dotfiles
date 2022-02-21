@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yes | sudo pacman -Syu
+yes | sudo pacman -Syyu
 
 # Disable bd brochot
 yes | sudo pacman -S msr-tools
@@ -24,9 +24,6 @@ cp -R Pictures/ $HOME/
 cp -R Documents/ $HOME/
 cp -R Music/ $HOME/
 cp -R Desktop/ $HOME/
-cp -R .icons/ $HOME/
-cp .zhistory $HOME/
-cp .gitconfig $HOME/
 
 # Setup boost
 cd /
