@@ -1,14 +1,17 @@
--- usefull: upower -d, cmus, btop, neofetch
+- Usefull: upower -d, btop, neofetch, onefetch (for git repo)
 
--- tạo shortcut: ln -s ~/.dotfiles/.zshrc ~/.zshrc
-    tạo ~/.zshrc link tới ~/.dotfiles/.zshrc
+- Night light: redshift -P -O <TEMPERATURE>
+    + Ex: ... 5000
+
+- Create shortcut: ln -s ~/.dotfiles/.zshrc ~/.zshrc
+    + Create ~/.zshrc link to ~/.dotfiles/.zshrc
   
--- Nếu tải font mà chưa hiện: sudo fc-cache -f -v
+- Help when install fonts: sudo fc-cache -f -v
   
--- Kich hoat bluetooth: systemctl enable bluetooth; systemctl start bluetooth
+- Enable bluetooth: systemctl enable bluetooth; systemctl start bluetooth
   
--- Chuyen file tu linux sang iphone khi ko co wifi
-  Cam day sac
-  Files -> Documents on Zeldris/Brave/Downloads -> paste
+- Transfer file from linux to iPhone:
+    + Plug in a USB cord
+    + Files -> Documents on zeldris-ip7/Brave/Downloads -> paste
   
--- Unlock a folder: sudo su; chmod ugo+rwx <foldername>
+- Unlock a folder: sudo su; chmod ugo+rwx <foldername>

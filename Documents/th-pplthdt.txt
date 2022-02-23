@@ -1,23 +1,24 @@
-- Dowload:
-  + IntelliJ: https://www.jetbrains.com/idea/download/
-
-(1) Login Github in IntelliJ: D@yL@G1thub)
-(2) mkdir E:\java -> choose that
+- Intellij: https://www.jetbrains.com/idea/download/
 
 - Welcome:
-  + Projects: Get from VSC -> login(1) -> click account -> choose java -> change directory(2) -> clone
-  + PLugins: Dracula Theme & WakaTime(3)
-(3) 4e75beb7-31c7-45fd-8b93-db43ca4bb784
-
-- Logout Github: Ctrl Alt S -> Version Control -> Github -> choose & remove
+	+ PLugins: Dracula Theme & WakaTime(1) -> restart
+	+ Projects: Get from VSC -> Github -> Log In(2) -> choose java -> change directory(3) -> clone
   
-- Check font ligature: Settings -> Editor -> Font
-  + Link font: https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip
+- Using:
+	+ File -> Close project
+	+ In java folder: delete .idea/ workspace.iml excercises.iml th-pplthdt.iml
+	+ mkdir th-pplthdt/lab.../
+	+ Projects: New project -> next&next -> choose lab...
+	+ Check font ligature: Settings -> Editor -> Font(4)
+	+ Translate(5)
 
-- Translate:
-  + Chọn File > Export > Create PDF/XPS if file word
-  + https://reader.ddict.me/
+- End:
+	+ File -> Close project
+	+ Get from VSC -> Github -> choose avatar -> hover -> Log Out
+	+ Delete folder E:/java
   
-- Download from github: https://downgit.github.io/
-
-- Delete folder E:\java
+(1) 4e75beb7-31c7-45fd-8b93-db43ca4bb784
+(2) copy link auth to private tab -> choose authorize | D@yL@G1thub
+(3) mkdir E:\java -> choose that
+(4) Link font: https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip
+(5) Chọn File > Export > Create PDF/XPS if file word -> https://reader.ddict.me
