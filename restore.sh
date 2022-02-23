@@ -1,29 +1,28 @@
 #!/bin/sh
 
-yes | sudo pacman -Syyu
+sudo pacman -Syyu
 
 # Disable bd brochot
-yes | sudo pacman -S msr-tools
+sudo pacman -S msr-tools
 sudo modprobe msr
 sudo rdmsr 0x1FC
 sudo wrmsr 0x1FC 0xFFFFE
 
-# Install some official packages
-yes | sudo pacman -S - < pkglist.txt
-
-# Remove some packages
-yes | sudo pacman -R - < pkglist-remove.txt
-
-# Little setup throttlestop
-sudo pip3 install throttlestop
-echo "Go to https://github.com/agoose77/throttlestop then continue from Install service..."
-
-# Setup folders and files
+# Setup folders
 cp -R software/ $HOME/
 cp -R Pictures/ $HOME/
 cp -R Documents/ $HOME/
 cp -R Music/ $HOME/
-cp -R Desktop/ $HOME/
+cp -R Videos/ $HOME/
+mkdir $HOME/Downloads/tmp/
+mkdir $HOME/workspace/
+git clone https://github.com/giatrung2012/cpp $HOME/workspace/cpp/
+git clone https://github.com/giatrung2012/java $HOME/workspace/java/
+mkdir $HOME/workspace/projects/
+
+#Setup nvim
+rm -r $HOME/.config/nvim/
+git clone https://github.com/giatrung2012/nvim $HOME/.config/nvim/
 
 # Setup boost
 cd /
@@ -40,3 +39,10 @@ sudo systemctl start boost.service
 # Disable bluetooth
 systemctl stop bluetooth
 systemctl disable bluetooth
+
+# NetworkManager
+echo "\n[device]\nwifi.scan-rand-mac-address=no" | sudo tee -a /etc/NetworkManager/NetworkManager.conf > dev/null
+
+# Git config
+git config --global user.email "trungrappar2002@gmail.com"
+git config --global user.name "giatrung2012"
