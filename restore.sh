@@ -21,6 +21,7 @@ git clone https://github.com/giatrung2012/java $HOME/workspace/java/
 mkdir $HOME/workspace/projects/
 
 #Setup nvim
+sudo pacman -S neovim
 rm -r $HOME/.config/nvim/
 git clone https://github.com/giatrung2012/nvim $HOME/.config/nvim/
 

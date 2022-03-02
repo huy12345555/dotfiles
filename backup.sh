@@ -6,3 +6,6 @@ cp -R $HOME/Pictures/ $HOME/backup/
 cp -R $HOME/Documents/ $HOME/backup/
 cp -R $HOME/Music/ $HOME/backup/
 cp -R $HOME/Videos/ $HOME/backup/
+
+# Backup files
+cp $HOME/.zshrc $HOME/backup/

@@ -31,12 +31,14 @@ makepkg -si
 
 ## TLP
 ```shell
+sudo pacman -S tlp
 sudo systemctl enable tlp.service
 sudo systemctl start tlp.service
 ```
 
 ## IBus Bamboo
 ```shell
+yay -S ibus-bamboo
 echo "\n# ibus-bamboo\nexport GTK_IM_MODULE=ibus\nexport QT_IM_MODULE=ibus\nexport XMODIFIERS=@im=ibus\nexport QT4_IM_MODULE=ibus\nexport CLUTTER_IM_MODULE=ibus\nibus-daemon -drx" | sudo tee -a /etc/profile > /dev/null
 echo "\n# ibus-bamboo\nGTK_IM_MODULE=ibus\nQT_IM_MODULE=ibus\nXMODIFIERS=@im=ibus" | sudo tee -a /etc/environment > /dev/null
 ibus-setup
@@ -46,6 +48,7 @@ ibus-setup
 
 ## Github CLI
 ```shell
+sudo pacman -S github-cli
 gh auth login
 ```
 - When prompted for your preferred protocol for Git operations, select HTTPS.

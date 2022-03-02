@@ -13,15 +13,15 @@ bash-language-server
 lua-language-server
 clang
 onefetch
+qalculate-gtk
+vlc
 
 jdk-openjdk
 flameshot
 eog
-vlc
 gnome-calendar
 gimp
 cheese
 ctags
 tree
-qalculate-gtk
 drawing

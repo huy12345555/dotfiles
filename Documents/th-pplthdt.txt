@@ -1,9 +1,9 @@
 - Intellij: https://www.jetbrains.com/idea/download/
 
 - Welcome:
-	+ PLugins: Dracula Theme & WakaTime(1) -> restart
+	+ PLugins: Dracula Theme, WakaTime(1), Key Promoter X, Rainbow brackets, Randomness, Extra Icons -> restart
 	+ Projects: Get from VSC -> Github -> Log In(2) -> choose java -> change directory(3) -> clone
-  
+
 - Using:
 	+ File -> Close project
 	+ In java folder: delete .idea/ workspace.iml excercises.iml th-pplthdt.iml
@@ -15,7 +15,7 @@
 - End:
 	+ File -> Close project
 	+ Get from VSC -> Github -> choose avatar -> hover -> Log Out
-	+ Delete folder E:/java
+	+ Shift Delete folder E:/java and %HOMEPATH%/.wakatime.cfg
   
 (1) 4e75beb7-31c7-45fd-8b93-db43ca4bb784
 (2) copy link auth to private tab -> choose authorize | D@yL@G1thub

@@ -2,6 +2,8 @@ firefox
 htop
 bashtop
 atril
+plank
+mplayer
 
 gthumb
 gnome-screenshot

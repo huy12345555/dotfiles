@@ -8,7 +8,7 @@ google-chrome
 authy
 ngrok
 evince-light
-
 xdman
+
 nerd-fonts-jetbrains-mono
 decoder
