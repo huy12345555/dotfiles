@@ -1,0 +1,17 @@
+# Increase volume
+"pactl set-sink-volume @DEFAULT_SINK@ +5000"
+   XF86AudioRaiseVolume
+
+# Decrease volume
+"pactl set-sink-volume @DEFAULT_SINK@ -5000"
+   XF86AudioLowerVolume
+
+# Mute volume
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+   XF86AudioMute
+
+# Screenshot
+"flameshot gui"
+    m:0x0 + c:107
+    Print
+

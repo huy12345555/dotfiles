@@ -1,6 +1,6 @@
-- Usefull: upower -d, btop, neofetch, onefetch (for git repo)
+- Usefull: upower -d, btop, neofetch, onefetch, trash-put
 
-- Night light: redshift -P -O <TEMPERATURE>
+- Night light: redshift -PO <TEMPERATURE>
     + Ex: ... 5000
 
 - Create shortcut: ln -s ~/.dotfiles/.zshrc ~/.zshrc
@@ -17,7 +17,5 @@
 - Unlock a folder: sudo su; chmod ugo+rwx <foldername>
 
 - nvim: gg=G for format
-
-- enable tap to click trong Screenshot/
 
 - nhac cua ong ngoai trong Music/ gg drive

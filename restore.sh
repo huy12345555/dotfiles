@@ -1,9 +1,9 @@
 #!/bin/sh
 
 sudo pacman -Syyu
+sudo pacman -S --needed - < ./pkgs/core.txt
 
 # Disable bd brochot
-sudo pacman -S msr-tools
 sudo modprobe msr
 sudo rdmsr 0x1FC
 sudo wrmsr 0x1FC 0xFFFFE
@@ -21,8 +21,7 @@ git clone https://github.com/giatrung2012/java $HOME/workspace/java/
 mkdir $HOME/workspace/projects/
 
 #Setup nvim
-sudo pacman -S neovim
-rm -r $HOME/.config/nvim/
+trash-put $HOME/.config/nvim/
 git clone https://github.com/giatrung2012/nvim $HOME/.config/nvim/
 
 # Setup boost
@@ -42,8 +41,19 @@ systemctl stop bluetooth
 systemctl disable bluetooth
 
 # NetworkManager
-echo "\n[device]\nwifi.scan-rand-mac-address=no" | sudo tee -a /etc/NetworkManager/NetworkManager.conf > dev/null
+echo -e "\n[device]\nwifi.scan-rand-mac-address=no" | sudo tee -a /etc/NetworkManager/NetworkManager.conf > /dev/null
 
 # Git config
 git config --global user.email "trungrappar2002@gmail.com"
 git config --global user.name "giatrung2012"
+
+# Yay
+cd $HOME/Downloads/tmp/
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+# TLP
+sudo systemctl enable tlp.service
+sudo systemctl start tlp.service
+

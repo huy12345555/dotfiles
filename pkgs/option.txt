@@ -1,0 +1,17 @@
+python-pip
+python-pynvim
+redshift
+intellij-idea-community-edition
+qalculate-gtk
+flameshot
+eog
+gnome-calendar
+gimp
+cheese
+ctags
+tree
+drawing
+ttf-jetbrains-mono
+evince
+xarchiver
+xbindkeys
