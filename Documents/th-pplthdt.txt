@@ -1,7 +1,7 @@
 - Intellij: https://www.jetbrains.com/idea/download/
 
 - Welcome:
-	+ PLugins: Dracula Theme, WakaTime(1), Key Promoter X, Rainbow brackets, Randomness, Extra Icons -> restart
+	+ PLugins: Dracula Theme, WakaTime(1), Key Promoter X, Rainbow brackets, Randomness -> restart
 	+ Projects: Get from VSC -> Github -> Log In(2) -> choose java -> change directory(3) -> clone
 
 - Using:

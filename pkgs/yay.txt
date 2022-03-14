@@ -3,10 +3,12 @@ ttf-wps-fonts
 ttf-ms-fonts
 visual-studio-code-bin
 brave-bin
-ibus-bamboo
 google-chrome
 authy
 ngrok
-xdman
 nerd-fonts-jetbrains-mono
+sddm-config-editor-git
+sddm-theme-deepin-git 
+evince-light 
+
 decoder

@@ -9,11 +9,12 @@ sudo rdmsr 0x1FC
 sudo wrmsr 0x1FC 0xFFFFE
 
 # Setup folders
-cp -R software/ $HOME/
-cp -R Pictures/ $HOME/
-cp -R Documents/ $HOME/
-cp -R Music/ $HOME/
-cp -R Videos/ $HOME/
+cp -r software/ $HOME/
+cp -r Pictures/ $HOME/
+cp -r Documents/ $HOME/
+cp -r Music/ $HOME/
+cp -r Videos/ $HOME/
+mkdir $HOME/Downloads/
 mkdir $HOME/Downloads/tmp/
 mkdir $HOME/workspace/
 git clone https://github.com/giatrung2012/cpp $HOME/workspace/cpp/

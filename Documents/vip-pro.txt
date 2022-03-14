@@ -1,4 +1,4 @@
-- Usefull: upower -d, btop, neofetch, onefetch, trash-put
+- Usefull: upower -d, btop, neofetch, onefetch, trash-put, pacman -Qm
 
 - Night light: redshift -PO <TEMPERATURE>
     + Ex: ... 5000
@@ -14,8 +14,9 @@
     + Plug in a USB cord
     + Files -> Documents on zeldris-ip7/Brave/Downloads -> paste
   
-- Unlock a folder: sudo su; chmod ugo+rwx <foldername>
+- Unlock a folder or file: sudo su; chmod ugo+rwx <foldername/filename>
 
 - nvim: gg=G for format
 
-- nhac cua ong ngoai trong Music/ gg drive
+- Nhac cua ong ngoai trong Music/ gg drive
+
