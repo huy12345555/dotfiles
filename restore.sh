@@ -58,3 +58,6 @@ makepkg -si
 sudo systemctl enable tlp.service
 sudo systemctl start tlp.service
 
+# Ranger
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+mv $HOME/backup/.config/ranger/rc.conf $HOME/.config/ranger/

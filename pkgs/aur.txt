@@ -2,13 +2,12 @@ wps-office
 ttf-wps-fonts
 ttf-ms-fonts
 visual-studio-code-bin
-brave-bin
 google-chrome
 authy
 ngrok
 nerd-fonts-jetbrains-mono
 sddm-config-editor-git
 sddm-theme-deepin-git 
-evince-light 
+evince-no-gnom
 
 decoder

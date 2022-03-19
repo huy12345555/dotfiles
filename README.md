@@ -3,7 +3,8 @@
 2. [Fcitx5](#fcitx5)
 3. [Github CLI](#github-cli)
 4. [Nvim as root](#nvim-as-root)
-5. [Touchpad] (#touchpad)
+5. [Touchpad](#touchpad)
+6. [Bitwarden CLI](#bitwarden-cli)
 
 ## Basic
 - Make this repo public then private later
@@ -27,8 +28,8 @@ echo -e "\n# fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fci
 ```shell
 gh auth login
 ```
-- When prompted for your preferred protocol for Git operations, select HTTPS.
-- When asked if you would like to authenticate to Git with your GitHub credentials, enter Y. 
+- When prompted for your preferred protocol for Git operations, select **HTTPS**.
+- When asked if you would like to authenticate to Git with your GitHub credentials, enter **Y**. 
 
 ## Nvim as root
 ```shell
@@ -56,3 +57,12 @@ omf theme agnoster
 ```shell
 sudo cp $HOME/backup/40-libinput.conf /etc/X11/xorg.conf.d/
 ```
+
+## Bitwarden CLI
+```shell
+bw login --apikey
+```
+- Log in to the [Web Vault](https://vault.bitwarden.com) and select the **Settings** tab.
+- From the **My Account** screen, scroll down to the **API Key** section.
+- Select the **View API** Key button and enter your Master Password to validate access.
+- From the **API Key** dialog box, copy the **client_secret**: value

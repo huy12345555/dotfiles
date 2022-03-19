@@ -1,4 +1,5 @@
-- Usefull: upower -d, btop, neofetch, onefetch, trash-put, pacman -Qm
+- Usefull: upower -d, btop, neofetch, onefetch, trash-put, pacman -Qm, 
+bwu, glow <md file>
 
 - Night light: redshift -PO <TEMPERATURE>
     + Ex: ... 5000

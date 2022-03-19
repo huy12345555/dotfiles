@@ -6,14 +6,16 @@ redshift
 flameshot
 kwrite
 gwenview
+intellij-idea-community-edition
+xbindkeys
+xorg
+playerctl
 
 python-pip
 python-pynvim
-intellij-idea-community-edition
 qalculate-gtk
 gimp
 cheese
 ctags
 tree
 drawing
-xbindkeys

@@ -14,3 +14,14 @@
 "flameshot gui"
     Print
 
+# Play - Pause
+"playerctl play-pause"
+    XF86AudioPlay
+
+# Next
+"playerctl next"
+    XF86AudioNext
+
+# Prev
+"playerctl previous"
+    XF86AudioPrev

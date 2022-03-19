@@ -1,13 +1,15 @@
 #!/bin/sh
 
 # Backup folder
-cp -R $HOME/software/ $HOME/backup/
-cp -R $HOME/Pictures/ $HOME/backup/
-cp -R $HOME/Documents/ $HOME/backup/
-cp -R $HOME/Music/ $HOME/backup/
-cp -R $HOME/Videos/ $HOME/backup/
+cp -r $HOME/software/ $HOME/backup/
+cp -r $HOME/Pictures/ $HOME/backup/
+cp -r $HOME/Documents/ $HOME/backup/
+cp -r $HOME/Music/ $HOME/backup/
+cp -r $HOME/Videos/ $HOME/backup/
 
 # Backup files
 cp $HOME/.xbindkeysrc $HOME/backup/
 cp $HOME/.config/fish/config.fish $HOME/backup/.config/fish/
+cp $HOME/.config/fish/functions/bwu.fish $HOME/backup/.config/fish/functions/
 cp /etc/X11/xorg.conf.d/40-libinput.conf $HOME/backup/
+cp $HOME/.config/ranger/rc.conf $HOME/backup/.config/ranger/

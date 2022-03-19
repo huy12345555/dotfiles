@@ -19,6 +19,8 @@ trash-cli
 fcitx5-im
 fcitx5-unikey
 ttf-jetbrains-mono
-xorg
 xclip
 fzf
+bitwarden-cli
+ranger
+ueberzug

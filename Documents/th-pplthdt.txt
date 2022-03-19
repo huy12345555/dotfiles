@@ -1,24 +1,30 @@
 - Intellij: https://www.jetbrains.com/idea/download/
 
 - Welcome:
-	+ PLugins: Dracula Theme, WakaTime(1), Key Promoter X, Rainbow brackets, Randomness -> restart
+	+ PLugins: Dracula Theme, WakaTime(1), Rainbow brackets -> restart 2
+        times, check wakatime again
 	+ Projects: Get from VSC -> Github -> Log In(2) -> choose java -> change directory(3) -> clone
 
 - Using:
 	+ File -> Close project
-	+ In java folder: delete .idea/ workspace.iml excercises.iml th-pplthdt.iml
-	+ mkdir th-pplthdt/lab.../
+	+ In java folder: delete .idea/, workspace.iml, excercises.iml,
+        th-pplthdt.iml,...
+	+ mkdir th-pplthdt/lab5/
 	+ Projects: New project -> next&next -> choose lab...
-	+ Check font ligature: Settings -> Editor -> Font(4)
-	+ Translate(5)
+	+ Check font size, font ligature: Settings -> Editor -> Font
+        + Move file docx to lab5/
 
 - End:
 	+ File -> Close project
 	+ Get from VSC -> Github -> choose avatar -> hover -> Log Out
-	+ Shift Delete folder E:/java and %HOMEPATH%/.wakatime.cfg
+	+ Delete folder E:/java, %HOMEPATH%/.wakatime.cfg,...
+        + Disk cleanup
+        
+        + Down winget
+        + sfc /scannow
+        + DISM /Online /Cleanup-Image /RestoreHealth
+        + Disk defragment
   
 (1) 4e75beb7-31c7-45fd-8b93-db43ca4bb784
 (2) copy link auth to private tab -> choose authorize | D@yL@G1thub
 (3) mkdir E:\java -> choose that
-(4) Link font: https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip
-(5) Chọn File > Export > Create PDF/XPS if file word -> https://reader.ddict.me
