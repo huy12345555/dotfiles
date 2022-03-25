@@ -24,3 +24,7 @@ fzf
 bitwarden-cli
 ranger
 ueberzug
+unrar
+unzip
+mpv
+yt-dlp

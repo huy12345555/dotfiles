@@ -1,4 +1,3 @@
-xarchiver
 cutefish
 noto-fonts
 sddm
@@ -19,3 +18,4 @@ cheese
 ctags
 tree
 drawing
+xarchiver

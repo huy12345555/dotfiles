@@ -13,3 +13,4 @@ cp $HOME/.config/fish/config.fish $HOME/backup/.config/fish/
 cp $HOME/.config/fish/functions/bwu.fish $HOME/backup/.config/fish/functions/
 cp /etc/X11/xorg.conf.d/40-libinput.conf $HOME/backup/
 cp $HOME/.config/ranger/rc.conf $HOME/backup/.config/ranger/
+cp $HOME/.config/ranger/commands.py $HOME/backup/.config/ranger/
