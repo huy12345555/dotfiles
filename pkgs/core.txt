@@ -4,13 +4,8 @@ git
 base-devel
 tlp
 github-cli
-telegram-desktop
 btop
-nodejs
-yarn
 bash-language-server
-lua-language-server
-clang
 onefetch
 neofetch
 vlc
@@ -26,5 +21,4 @@ ranger
 ueberzug
 unrar
 unzip
-mpv
-yt-dlp
+lsd

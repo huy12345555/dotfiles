@@ -3,7 +3,6 @@ ttf-wps-fonts
 ttf-ms-fonts
 visual-studio-code-bin
 authy
-ngrok
 nerd-fonts-jetbrains-mono
 atool
 microsoft-edge-stable-bin
@@ -11,4 +10,5 @@ sddm-config-editor-git
 sddm-theme-deepin-git 
 evince-no-gnom
 
+ngrok
 decoder

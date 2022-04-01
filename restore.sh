@@ -60,4 +60,4 @@ sudo systemctl start tlp.service
 
 # Ranger
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
-mv -r $HOME/backup/.config/ranger/ $HOME/.config/
+cp -r $HOME/backup/.config/ranger/ $HOME/.config/

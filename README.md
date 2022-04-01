@@ -50,7 +50,6 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 ```
 ```shell
 omf install agnoster
-omf theme agnoster
 ```
 
 ## Touchpad

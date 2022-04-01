@@ -5,9 +5,10 @@ end
 # Remove intro msg
 set fish_greeting
 
-# ls
-alias ll='ls -lah'
-alias la='ls -A'
+# lsd
+alias ls='lsd'
+alias ll='lsd -lah'
+alias la='lsd -A'
 
 # git
 alias gcl='git clone'
@@ -19,7 +20,4 @@ alias gt='git status'
 
 # jdtls
 # export PATH=$PATH:$HOME/.local/bin
-
-# lofi
-alias lofi='mpv --no-video --msg-level=ffmpeg=no "https://www.youtube.com/watch?v=5qap5aO4i9A"'
 
