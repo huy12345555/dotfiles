@@ -21,3 +21,5 @@ alias gt='git status'
 # jdtls
 # export PATH=$PATH:$HOME/.local/bin
 
+# trash-cli
+alias del='trash-put'

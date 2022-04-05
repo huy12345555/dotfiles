@@ -5,8 +5,11 @@
 4. [Nvim as root](#nvim-as-root)
 5. [Touchpad](#touchpad)
 6. [Bitwarden CLI](#bitwarden-cli)
+7. [Cutefish sddm theme](#cutefish-sddm-theme)
+8. [Cutefish cursor](#cutefish-cursor)
 
 ## Basic
+- Do not run at root user
 - Make this repo public then private later
     ```shell
     git clone https://github.com/giatrung2012/backup $HOME/
@@ -47,8 +50,6 @@ cp -r $HOME/backup/.config/fish/ $HOME/.config/
 - Logout then login
 ```shell
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-```
-```shell
 omf install agnoster
 ```
 
@@ -65,3 +66,15 @@ bw login --apikey
 - From the **My Account** screen, scroll down to the **API Key** section.
 - Select the **View API** Key button and enter your Master Password to validate access.
 - From the **API Key** dialog box, copy the **client_secret**: value
+
+## Cutefish sddm theme
+```shell
+cp -r $HOME/backup/cutefish/ /usr/share/sddm/themes/
+```
+- Run sddm-config-editor for config
+
+## Cutefish cursor
+```shell
+cp $HOME/backup/index.theme /usr/share/icons/default/
+```
+- Restart X

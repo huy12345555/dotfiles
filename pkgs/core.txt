@@ -6,7 +6,6 @@ tlp
 github-cli
 btop
 bash-language-server
-onefetch
 neofetch
 vlc
 fish
@@ -22,3 +21,4 @@ ueberzug
 unrar
 unzip
 lsd
+lua-language-server

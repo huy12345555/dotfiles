@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo pacman -Syyu
-sudo pacman -S --needed - < ./pkgs/core.txt
+sudo pacman -S --needed - < $HOME/backup/pkgs/core.txt
 
 # Disable bd brochot
 sudo modprobe msr
@@ -53,6 +53,7 @@ cd $HOME/Downloads/tmp/
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+yay -S - < $HOME/backup/pkgs/aur-core.txt
 
 # TLP
 sudo systemctl enable tlp.service
