@@ -1,6 +1,0 @@
-#!/bin/sh
-
-case $1 in
-    pre) ;;
-    post) sh /home/giatrung2012/software/boost.sh ;;
-esac

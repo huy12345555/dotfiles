@@ -5,7 +5,6 @@ redshift
 telegram-desktop
 nodejs
 yarn
-npm
 clang
 flameshot
 xbindkeys
@@ -13,6 +12,8 @@ playerctl
 gnome-keyring
 libdbusmenu-glib
 onefetch
+appmenu-gtk-module
+featherpad
 
 intellij-idea-community-edition
 python-pip
@@ -23,3 +24,4 @@ ctags
 tree
 mpv
 yt-dlp
+npm

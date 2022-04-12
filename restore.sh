@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo pacman -Syyu
-sudo pacman -S --needed - < $HOME/backup/pkgs/core.txt
+sudo pacman -S --needed - < $HOME/dotfiles/pkgs/core
 
 # Disable bd brochot
 sudo modprobe msr
@@ -9,33 +9,23 @@ sudo rdmsr 0x1FC
 sudo wrmsr 0x1FC 0xFFFFE
 
 # Setup folders
-cp -r software/ $HOME/
-cp -r Pictures/ $HOME/
-cp -r Documents/ $HOME/
-cp -r Music/ $HOME/
-cp -r Videos/ $HOME/
-mkdir $HOME/Downloads/
-mkdir $HOME/Downloads/tmp/
-mkdir $HOME/workspace/
-git clone https://github.com/giatrung2012/cpp $HOME/workspace/cpp/
-git clone https://github.com/giatrung2012/java $HOME/workspace/java/
-mkdir $HOME/workspace/projects/
+cp -r $HOME/dotfiles/scripts/ $HOME/
+mkdir -p $HOME/Downloads/tmp/
+mkdir -p $HOME/workspace/projects/
 
-#Setup nvim
-trash-put $HOME/.config/nvim/
+# Setup nvim
 git clone https://github.com/giatrung2012/nvim $HOME/.config/nvim/
 
-# Setup boost
+# Setup disable bd brochot for startup and wakeup
 cd /
-chmod +x $HOME/software/boost
-chmod +x $HOME/software/boost.sh
-chmod +x $HOME/software/gboost.sh
+chmod +x $HOME/scripts/disable-bdprochot-wakeup
+chmod +x $HOME/scripts/disable-bdprochot-wakeup.sh
+chmod +x $HOME/scripts/disable-bdprochot-startup.sh
 sudo chmod ugo+rwx /lib/systemd/system-sleep/
-mv $HOME/software/boost /lib/systemd/system-sleep/
+cp $HOME/scripts/disable-bdprochot-wakeup /lib/systemd/system-sleep/
 sudo chmod ugo+rwx /etc/systemd/system/
-mv $HOME/software/boost.service /etc/systemd/system/
-sudo systemctl enable boost.service
-sudo systemctl start boost.service
+cp $HOME/scripts/disable-bdprochot-startup.service /etc/systemd/system/
+sudo systemctl enable disable-bdprochot-startup.service 
 
 # Disable bluetooth
 systemctl stop bluetooth
@@ -48,17 +38,18 @@ echo -e "\n[device]\nwifi.scan-rand-mac-address=no" | sudo tee -a /etc/NetworkMa
 git config --global user.email "trungrappar2002@gmail.com"
 git config --global user.name "giatrung2012"
 
-# Yay
+# Paru
 cd $HOME/Downloads/tmp/
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-yay -S - < $HOME/backup/pkgs/aur-core.txt
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si 
+paru -S - < $HOME/dotfiles/pkgs/aur-core
 
 # TLP
 sudo systemctl enable tlp.service
 sudo systemctl start tlp.service
 
-# Ranger
-git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
-cp -r $HOME/backup/.config/ranger/ $HOME/.config/
+# Config
+cp -r $HOME/dotfiles/.config/ranger/ $HOME/.config/
+cp -r $HOME/dotfiles/.config/btop/ $HOME/.config/
+cp -r $HOME/dotfiles/.config/rclone/ $HOME/.config/

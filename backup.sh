@@ -1,16 +1,15 @@
 #!/bin/sh
 
-# Backup folder
-cp -r $HOME/software/ $HOME/backup/
-cp -r $HOME/Pictures/ $HOME/backup/
-cp -r $HOME/Documents/ $HOME/backup/
-cp -r $HOME/Music/ $HOME/backup/
-cp -r $HOME/Videos/ $HOME/backup/
+# Backup folders
+cp -r $HOME/scripts/ $HOME/dotfiles/
+cp -r $HOME/.config/btop/ $HOME/dotfiles/.config/
+cp -r $HOME/.config/fish/ $HOME/dotfiles/.config/
+cp -r $HOME/.config/rclone/ $HOME/dotfiles/.config/
+
+cp -r $HOME/.config/featherpad/ $HOME/dotfiles/.config/
 
 # Backup files
-cp $HOME/.xbindkeysrc $HOME/backup/
-cp $HOME/.config/fish/config.fish $HOME/backup/.config/fish/
-cp $HOME/.config/fish/functions/bwu.fish $HOME/backup/.config/fish/functions/
-cp /etc/X11/xorg.conf.d/40-libinput.conf $HOME/backup/
-cp $HOME/.config/ranger/rc.conf $HOME/backup/.config/ranger/
-cp $HOME/.config/ranger/commands.py $HOME/backup/.config/ranger/
+cp $HOME/.xbindkeysrc $HOME/dotfiles/
+cp /etc/X11/xorg.conf.d/40-libinput.conf $HOME/dotfiles/
+cp $HOME/.config/ranger/rc.conf $HOME/dotfiles/.config/ranger/
+cp $HOME/.config/ranger/commands.py $HOME/dotfiles/.config/ranger/

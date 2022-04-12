@@ -7,18 +7,15 @@
 6. [Bitwarden CLI](#bitwarden-cli)
 7. [Cutefish sddm theme](#cutefish-sddm-theme)
 8. [Cutefish cursor](#cutefish-cursor)
+9. [Ngrok](#ngrok)
 
 ## Basic
-- Do not run at root user
-- Make this repo public then private later
-    ```shell
-    git clone https://github.com/giatrung2012/backup $HOME/
-    ```
-- Restore
-    ```shell
-    cd $HOME/backup/
-    ./restore.sh
-    ```
+-  Don't run at root user
+```shell
+git clone https://github.com/giatrung2012/dotfiles $HOME/
+cd $HOME/dotfiles/
+./restore.sh
+```
 
 ## Fcitx5
 ```shell
@@ -45,7 +42,7 @@ nvim +PackerSync
 ## Fish
 ```shell
 chsh -s /usr/bin/fish
-cp -r $HOME/backup/.config/fish/ $HOME/.config/
+cp -r $HOME/dotfiles/.config/fish/ $HOME/.config/
 ```
 - Logout then login
 ```shell
@@ -55,7 +52,7 @@ omf install agnoster
 
 ## Touchpad
 ```shell
-sudo cp $HOME/backup/40-libinput.conf /etc/X11/xorg.conf.d/
+sudo cp $HOME/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
 ```
 
 ## Bitwarden CLI
@@ -69,12 +66,18 @@ bw login --apikey
 
 ## Cutefish sddm theme
 ```shell
-cp -r $HOME/backup/cutefish/ /usr/share/sddm/themes/
+cp -r $HOME/dotfiles/cutefish/ /usr/share/sddm/themes/
 ```
 - Run sddm-config-editor for config
 
 ## Cutefish cursor
 ```shell
-cp $HOME/backup/index.theme /usr/share/icons/default/
+cp $HOME/dotfiles/index.theme /usr/share/icons/default/
 ```
 - Restart X
+
+## Ngrok
+- https://dashboard.ngrok.com/get-started/setup
+```shell
+ngrok http 127.0.0.1:5500 -host-header="127.0.0.1:5500"
+```

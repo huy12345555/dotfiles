@@ -1,0 +1,8 @@
+[Unit]
+Description=Disable bd prochot
+ 
+[Service]
+ExecStart=$HOME/scripts/disable-bdprochot-startup.sh
+ 
+[Install]
+WantedBy=multi-user.target

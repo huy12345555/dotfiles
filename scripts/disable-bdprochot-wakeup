@@ -1,0 +1,6 @@
+#!/bin/sh
+
+case $1 in
+    pre) ;;
+    post) sh $HOME/scripts/disable-bdprochot-wakeup.sh ;;
+esac

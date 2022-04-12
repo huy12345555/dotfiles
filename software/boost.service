@@ -1,8 +1,0 @@
-[Unit]
-Description=Boost
- 
-[Service]
-ExecStart=/home/giatrung2012/software/gboost.sh
- 
-[Install]
-WantedBy=multi-user.target

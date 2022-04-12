@@ -23,3 +23,4 @@ alias gt='git status'
 
 # trash-cli
 alias del='trash-put'
+
