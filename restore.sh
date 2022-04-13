@@ -50,6 +50,18 @@ sudo systemctl enable tlp.service
 sudo systemctl start tlp.service
 
 # Config
-cp -r $HOME/dotfiles/.config/ranger/ $HOME/.config/
-cp -r $HOME/dotfiles/.config/btop/ $HOME/.config/
-cp -r $HOME/dotfiles/.config/rclone/ $HOME/.config/
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+cp -r $HOME/dotfiles/.config/ $HOME/
+cp $HOME/dotfiles/.xbindkeysrc $HOME/
+
+# Fcitx5
+echo -e "\n# fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx" | sudo tee -a /etc/environment > /dev/null
+
+# Touchpad
+sudo cp $HOME/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
+
+# Cutefish sddm theme
+cp -r $HOME/dotfiles/cutefish/ /usr/share/sddm/themes/
+
+# Cutefish cursor
+cp $HOME/dotfiles/index.theme /usr/share/icons/default/

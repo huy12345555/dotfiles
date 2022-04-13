@@ -3,11 +3,10 @@
 2. [Fcitx5](#fcitx5)
 3. [Github CLI](#github-cli)
 4. [Nvim as root](#nvim-as-root)
-5. [Touchpad](#touchpad)
-6. [Bitwarden CLI](#bitwarden-cli)
-7. [Cutefish sddm theme](#cutefish-sddm-theme)
-8. [Cutefish cursor](#cutefish-cursor)
-9. [Ngrok](#ngrok)
+5. [Bitwarden CLI](#bitwarden-cli)
+6. [Cutefish sddm theme](#cutefish-sddm-theme)
+7. [Cutefish cursor](#cutefish-cursor)
+8. [Ngrok](#ngrok)
 
 ## Basic
 -  Don't run at root user
@@ -18,9 +17,6 @@ cd $HOME/dotfiles/
 ```
 
 ## Fcitx5
-```shell
-echo -e "\n# fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx" | sudo tee -a /etc/environment > /dev/null
-```
 - Logout then login
 - Fcitx5 Configuration -> Add unikey
 
@@ -34,7 +30,6 @@ gh auth login
 ## Nvim as root
 ```shell
 sudo su
-trash-put /root/.config/nvim/
 git clone https://github.com/giatrung2012/nvim /root/.config/nvim/
 nvim +PackerSync
 ```
@@ -42,17 +37,11 @@ nvim +PackerSync
 ## Fish
 ```shell
 chsh -s /usr/bin/fish
-cp -r $HOME/dotfiles/.config/fish/ $HOME/.config/
 ```
 - Logout then login
 ```shell
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 omf install agnoster
-```
-
-## Touchpad
-```shell
-sudo cp $HOME/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
 ```
 
 ## Bitwarden CLI
@@ -65,15 +54,9 @@ bw login --apikey
 - From the **API Key** dialog box, copy the **client_secret**: value
 
 ## Cutefish sddm theme
-```shell
-cp -r $HOME/dotfiles/cutefish/ /usr/share/sddm/themes/
-```
-- Run sddm-config-editor for config
+- Run sddm-config-editor -> themes -> cutefish
 
 ## Cutefish cursor
-```shell
-cp $HOME/dotfiles/index.theme /usr/share/icons/default/
-```
 - Restart X
 
 ## Ngrok
