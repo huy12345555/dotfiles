@@ -33,3 +33,6 @@ gnome-keyring
 libdbusmenu-glib
 appmenu-gtk-module
 featherpad
+exfat-utils
+ntfs-3g
+partitionmanager
