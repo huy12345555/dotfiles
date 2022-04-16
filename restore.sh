@@ -10,22 +10,29 @@ sudo wrmsr 0x1FC 0xFFFFE
 
 # Setup folders
 cp -r $HOME/dotfiles/scripts/ $HOME/
-mkdir -p $HOME/Downloads/tmp/
+cp -r $HOME/dotfiles/software/ $HOME/
+mkdir -p $HOME/Do
+iwnloads/tmp/
 mkdir -p $HOME/workspace/projects/
+mkdir $HOME/Documents/
+mkdir $HOME/Pictures/
+mkdir $HOME/Music/
+mkdir $HOME/Videos/
 
 # Setup nvim
 git clone https://github.com/giatrung2012/nvim $HOME/.config/nvim/
 
 # Setup disable bd brochot for startup and wakeup
 cd /
-chmod +x $HOME/scripts/disable-bdprochot-wakeup
-chmod +x $HOME/scripts/disable-bdprochot-wakeup.sh
-chmod +x $HOME/scripts/disable-bdprochot-startup.sh
+chmod +x $HOME/software/boost
+chmod +x $HOME/software/boost.sh
+chmod +x $HOME/software/gboost.sh
 sudo chmod ugo+rwx /lib/systemd/system-sleep/
-cp $HOME/scripts/disable-bdprochot-wakeup /lib/systemd/system-sleep/
+mv $HOME/software/boost /lib/systemd/system-sleep/
 sudo chmod ugo+rwx /etc/systemd/system/
-cp $HOME/scripts/disable-bdprochot-startup.service /etc/systemd/system/
-sudo systemctl enable disable-bdprochot-startup.service 
+mv $HOME/software/boost.service /etc/systemd/system/
+sudo systemctl enable boost.service
+sudo systemctl start boost.service
 
 # Disable bluetooth
 systemctl stop bluetooth
@@ -61,7 +68,10 @@ echo -e "\n# fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fci
 sudo cp $HOME/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
 
 # Cutefish sddm theme
-cp -r $HOME/dotfiles/cutefish/ /usr/share/sddm/themes/
+sudo cp -r $HOME/dotfiles/cutefish/ /usr/share/sddm/themes/
 
 # Cutefish cursor
-cp $HOME/dotfiles/index.theme /usr/share/icons/default/
+sudo cp $HOME/dotfiles/index.theme /usr/share/icons/default/
+
+# Fonts
+sudo fc-cache -fv

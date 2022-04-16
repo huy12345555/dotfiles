@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Backup folders
-cp -r $HOME/scripts/ $HOME/dotfiles/
+cp -r $HOME/software/ $HOME/dotfiles/
 cp -r $HOME/.config/btop/ $HOME/dotfiles/.config/
 cp -r $HOME/.config/featherpad/ $HOME/dotfiles/.config/
 cp -r $HOME/.config/flameshot/ $HOME/dotfiles/.config/
