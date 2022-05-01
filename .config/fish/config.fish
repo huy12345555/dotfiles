@@ -18,9 +18,11 @@ alias gc='git commit -m'
 alias gp='git push origin'
 alias gt='git status'
 
-# jdtls
-# export PATH=$PATH:$HOME/.local/bin
-
 # trash-cli
 alias del='trash-put'
 
+# Support bat in ranger
+export TERM=xterm-256color
+
+# bat
+alias bat='bat --theme Dracula'

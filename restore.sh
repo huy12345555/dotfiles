@@ -11,13 +11,9 @@ sudo wrmsr 0x1FC 0xFFFFE
 # Setup folders
 cp -r $HOME/dotfiles/scripts/ $HOME/
 cp -r $HOME/dotfiles/software/ $HOME/
-mkdir -p $HOME/Do
-iwnloads/tmp/
+mkdir -p $HOME/Downloads/{tmp,Documents,Videos}
 mkdir -p $HOME/workspace/projects/
-mkdir $HOME/Documents/
-mkdir $HOME/Pictures/
-mkdir $HOME/Music/
-mkdir $HOME/Videos/
+git clone https://github.com/giatrung2012/learn $HOME/workspace/
 
 # Setup nvim
 git clone https://github.com/giatrung2012/nvim $HOME/.config/nvim/

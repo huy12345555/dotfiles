@@ -41,7 +41,6 @@ chsh -s /usr/bin/fish
 - Logout then login
 ```shell
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-omf install agnoster
 ```
 
 ## Bitwarden CLI

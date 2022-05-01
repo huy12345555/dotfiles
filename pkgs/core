@@ -4,7 +4,7 @@ git
 base-devel
 tlp
 github-cli
-btop
+htop
 bash-language-server
 neofetch
 vlc
@@ -37,3 +37,6 @@ exfat-utils
 ntfs-3g
 partitionmanager
 rclone
+onefetch
+bat
+ark
