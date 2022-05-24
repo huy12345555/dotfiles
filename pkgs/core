@@ -25,6 +25,7 @@ lua-language-server
 atool
 redshift
 nodejs
+npm
 yarn
 flameshot
 xbindkeys

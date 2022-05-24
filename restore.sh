@@ -38,7 +38,7 @@ systemctl disable bluetooth
 echo -e "\n[device]\nwifi.scan-rand-mac-address=no" | sudo tee -a /etc/NetworkManager/NetworkManager.conf > /dev/null
 
 # Git config
-git config --global user.email "trungrappar2002@gmail.com"
+git config --global user.email "trunghsg2012@gmail.com"
 git config --global user.name "giatrung2012"
 
 # Paru

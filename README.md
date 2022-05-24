@@ -1,15 +1,16 @@
 ## Table of Contents
-1. [Basic](#basic)
+1. [Setup](#setup)
 2. [Fcitx5](#fcitx5)
-3. [Github CLI](#github-cli)
-4. [Nvim as root](#nvim-as-root)
-5. [Bitwarden CLI](#bitwarden-cli)
-6. [Cutefish sddm theme](#cutefish-sddm-theme)
-7. [Cutefish cursor](#cutefish-cursor)
-8. [Ngrok](#ngrok)
+3. [Fish](#fish)
+4. [Cutefish sddm theme](#cutefish-sddm-theme)
+5. [Cutefish cursor](#cutefish-cursor)
+6. [Github CLI](#github-cli)
+7. [Bitwarden CLI](#bitwarden-cli)
+8. [Pacman & paru](#pacman-and-paru)
+9. [Nvim as root](#nvim-as-root)
+10. [Ngrok](#ngrok)
 
-## Basic
--  Don't run at root user
+## Setup
 ```shell
 git clone https://github.com/giatrung2012/dotfiles $HOME/
 cd $HOME/dotfiles/
@@ -19,20 +20,6 @@ cd $HOME/dotfiles/
 ## Fcitx5
 - Logout then login
 - Fcitx5 Configuration -> Add unikey
-
-## Github CLI
-```shell
-gh auth login
-```
-- When prompted for your preferred protocol for Git operations, select **HTTPS**.
-- When asked if you would like to authenticate to Git with your GitHub credentials, enter **Y**. 
-
-## Nvim as root
-```shell
-sudo su
-git clone https://github.com/giatrung2012/nvim /root/.config/nvim/
-nvim +PackerSync
-```
 
 ## Fish
 ```shell
@@ -44,6 +31,19 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 omf install agnoster
 ```
 
+## Cutefish sddm theme
+- `sddm-config-editor` -> themes -> cutefish
+
+## Cutefish cursor
+- Restart X
+
+## Github CLI
+```shell
+gh auth login
+```
+- When prompted for your preferred protocol for Git operations, select **HTTPS**.
+- When asked if you would like to authenticate to Git with your GitHub credentials, enter **Y**. 
+
 ## Bitwarden CLI
 ```shell
 bw login --apikey
@@ -53,11 +53,16 @@ bw login --apikey
 - Select the **View API** Key button and enter your Master Password to validate access.
 - From the **API Key** dialog box, copy the **client_secret**: value
 
-## Cutefish sddm theme
-- Run sddm-config-editor -> themes -> cutefish
+## Pacman & paru
+- Uncomment Color, ParallelDownloads & add ILoveCandy in /etc/pacman.conf
+- Uncomment BottomUp in /etc/paru.conf
 
-## Cutefish cursor
-- Restart X
+## Nvim as root
+```shell
+sudo su
+git clone https://github.com/giatrung2012/nvim /root/.config/nvim/
+nvim +PackerSync
+```
 
 ## Ngrok
 - https://dashboard.ngrok.com/get-started/setup
