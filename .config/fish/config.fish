@@ -21,8 +21,5 @@ alias gt='git status'
 # trash-cli
 alias del='trash-put'
 
-# Support bat in ranger
-export TERM=xterm-256color
-
 # bat
 alias bat='bat --theme Dracula'

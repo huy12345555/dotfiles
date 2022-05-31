@@ -40,6 +40,7 @@ echo -e "\n[device]\nwifi.scan-rand-mac-address=no" | sudo tee -a /etc/NetworkMa
 # Git config
 git config --global user.email "trunghsg2012@gmail.com"
 git config --global user.name "giatrung2012"
+git config --global core.editor nvim
 
 # Paru
 cd $HOME/Downloads/tmp/
@@ -53,7 +54,6 @@ sudo systemctl enable tlp.service
 sudo systemctl start tlp.service
 
 # Config
-git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 cp -r $HOME/dotfiles/.config/ $HOME/
 cp $HOME/dotfiles/.xbindkeysrc $HOME/
 
