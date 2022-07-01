@@ -1,0 +1,4 @@
+authy
+nerd-fonts-jetbrains-mono
+microsoft-edge-stable-bin
+ttf-ms-fonts

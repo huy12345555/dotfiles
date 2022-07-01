@@ -2,10 +2,8 @@
 1. [Setup](#setup)
 2. [Fcitx5](#fcitx5)
 3. [Fish](#fish)
-4. [Cutefish sddm theme](#cutefish-sddm-theme)
-5. [Cutefish cursor](#cutefish-cursor)
-6. [Github CLI](#github-cli)
-7. [Pacman & paru](#pacman-and-paru)
+4. [Github CLI](#github-cli)
+5. [Pacman & paru](#pacman-and-paru)
 
 ## Setup
 ```shell
@@ -27,12 +25,6 @@ chsh -s /usr/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 omf install agnoster
 ```
-
-## Cutefish sddm theme
-- `sddm-config-editor` -> themes -> cutefish
-
-## Cutefish cursor
-- Restart X
 
 ## Github CLI
 ```shell

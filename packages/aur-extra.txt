@@ -1,0 +1,8 @@
+eclipse-java
+ngrok
+ventoy-bin
+cpufetch
+gtkhash
+visual-studio-code-bin
+wps-office
+ttf-wps-fonts

@@ -1,0 +1,5 @@
+vim
+system-config-printer
+blueberry
+nano
+

@@ -19,15 +19,11 @@ lsd
 lua-language-server
 redshift
 flameshot
-xbindkeys
-playerctl
 gnome-keyring
-libdbusmenu-glib
-appmenu-gtk-module
-featherpad
 exfat-utils
 ntfs-3g
 rclone
 bat
-ark
 nomacs
+xed
+xeader

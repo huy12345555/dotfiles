@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo pacman -Syyu
-sudo pacman -S --needed - < $HOME/dotfiles/pkgs/core
+sudo pacman -S --needed - < $HOME/dotfiles/packages/core.txt
 
 # Disable bd brochot
 sudo modprobe msr
@@ -12,8 +12,6 @@ sudo wrmsr 0x1FC 0xFFFFE
 cp -r $HOME/dotfiles/software/ $HOME/
 mkdir $HOME/{Documents,Pictures,Music,Videos}
 mkdir -p $HOME/Downloads/{tmp,Documents,Videos}
-git clone https://github.com/giatrung2012/learn $HOME/workspace/
-mkdir -p $HOME/workspace/projects/
 
 # Setup nvim
 git clone https://github.com/giatrung2012/nvim $HOME/.config/nvim/
@@ -47,27 +45,21 @@ cd $HOME/Downloads/tmp/
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si 
-paru -S - < $HOME/dotfiles/pkgs/aur-core
+paru -S - < $HOME/dotfiles/packages/aur.txt
 
 # TLP
 sudo systemctl enable tlp.service
 sudo systemctl start tlp.service
 
 # Config
-cp -r $HOME/dotfiles/.config/ $HOME/
-cp $HOME/dotfiles/.xbindkeysrc $HOME/
+cp -r $HOME/dotfiles/.config/ $HOME
 
 # Fcitx5
-echo -e "\n# fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx" | sudo tee -a /etc/environment > /dev/null
+echo -e "\n# Fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx" | sudo tee -a /etc/environment > /dev/null
 
-# Touchpad
-sudo cp $HOME/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
-
-# Cutefish sddm theme
-sudo cp -r $HOME/dotfiles/cutefish/ /usr/share/sddm/themes/
-
-# Cutefish cursor
-sudo cp $HOME/dotfiles/index.theme /usr/share/icons/default/
+# Remove some packages
+sudo pacman -Rs - < $HOME/dotfiles/packages/remove.txt
 
 # Fonts
 sudo fc-cache -fv
+
