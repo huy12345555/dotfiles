@@ -2,3 +2,6 @@ authy
 nerd-fonts-jetbrains-mono
 microsoft-edge-stable-bin
 ttf-ms-fonts
+bibata-cursor-theme-bin
+nordic-theme 
+lightdm-webkit-theme-aether

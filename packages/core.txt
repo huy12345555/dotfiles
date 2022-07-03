@@ -27,3 +27,4 @@ bat
 nomacs
 xed
 xeader
+papirus-icon-theme

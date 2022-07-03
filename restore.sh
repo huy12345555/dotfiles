@@ -60,6 +60,12 @@ echo -e "\n# Fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fci
 # Remove some packages
 sudo pacman -Rs - < $HOME/dotfiles/packages/remove.txt
 
+# Touchpad
+sudo cp $HOME/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
+
+# Cursor
+sudo cp $HOME/dotfiles/index.theme /usr/share/icons/default/
+
 # Fonts
 sudo fc-cache -fv
 
