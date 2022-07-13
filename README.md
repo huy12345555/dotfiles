@@ -1,9 +1,8 @@
 ## Table of Contents
 1. [Setup](#setup)
 2. [Fcitx5](#fcitx5)
-3. [Fish](#fish)
-4. [Github CLI](#github-cli)
-5. [Pacman & paru](#pacman-and-paru)
+3. [Github CLI](#github-cli)
+4. [Pacman & paru](#pacman-and-paru)
 
 ## Setup
 ```shell
@@ -15,16 +14,6 @@ cd dotfiles/
 ## Fcitx5
 - Logout then login
 - Fcitx5 Configuration -> Add unikey
-
-## Fish
-```shell
-chsh -s /usr/bin/fish
-```
-- Logout then login
-```shell
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-omf install agnoster
-```
 
 ## Github CLI
 ```shell

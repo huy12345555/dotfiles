@@ -53,6 +53,7 @@ sudo systemctl start tlp.service
 
 # Config
 cp -r $HOME/dotfiles/.config/ $HOME
+cp -r $HOME/dotfiles/.cinnamon/ $HOME
 
 # Fcitx5
 echo -e "\n# Fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx" | sudo tee -a /etc/environment > /dev/null
@@ -68,4 +69,9 @@ sudo cp $HOME/dotfiles/index.theme /usr/share/icons/default/
 
 # Fonts
 sudo fc-cache -fv
+
+# Fish
+chsh -s /usr/bin/fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+omf install agnoster
 
