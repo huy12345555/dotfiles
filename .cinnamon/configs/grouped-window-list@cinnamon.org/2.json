@@ -162,9 +162,7 @@
             "org.gnome.Terminal.desktop",
             "nemo.desktop"
         ],
-        "value": [
-            "firefox.desktop"
-        ]
+        "value": []
     },
     "group-apps": {
         "type": "checkbox",

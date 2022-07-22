@@ -4,3 +4,5 @@ ttf-ms-fonts
 bibata-cursor-theme-bin
 nordic-theme 
 lightdm-webkit-theme-aether
+microsoft-edge-stable-bin
+
