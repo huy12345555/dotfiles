@@ -9,9 +9,10 @@ sudo rdmsr 0x1FC
 sudo wrmsr 0x1FC 0xFFFFE
 
 # Setup folders
-cp -r $HOME/dotfiles/software/ $HOME/
+cp -r $HOME/dotfiles/software/ $HOME
 mkdir $HOME/{Documents,Pictures,Music,Videos}
 mkdir -p $HOME/Downloads/{tmp,Documents,Videos}
+mkdir -p $HOME/workspace/projects/
 
 # Setup nvim
 git clone https://github.com/giatrung2012/nvim $HOME/.config/nvim/
@@ -53,7 +54,7 @@ sudo systemctl start tlp.service
 
 # Config
 cp -r $HOME/dotfiles/.config/ $HOME
-cp -r $HOME/dotfiles/.cinnamon/ $HOME
+cp $HOME/dotfiles/.xbindkeysrc $HOME
 
 # Fcitx5
 echo -e "\n# Fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx" | sudo tee -a /etc/environment > /dev/null
@@ -64,7 +65,10 @@ sudo pacman -Rs - < $HOME/dotfiles/packages/remove.txt
 # Touchpad
 sudo cp $HOME/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
 
-# Cursor
+# Cutefish sddm theme
+sudo cp -r $HOME/dotfiles/cutefish/ /usr/share/sddm/themes/
+
+# Cutefish cursor
 sudo cp $HOME/dotfiles/index.theme /usr/share/icons/default/
 
 # Fonts

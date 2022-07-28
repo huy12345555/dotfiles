@@ -1,8 +1,9 @@
 ## Table of Contents
 1. [Setup](#setup)
 2. [Fcitx5](#fcitx5)
-3. [Github CLI](#github-cli)
-4. [Pacman & paru](#pacman-and-paru)
+3. [Cutefish sddm theme](#cutefish-sddm-theme)
+4. [Github CLI](#github-cli)
+5. [Pacman & paru](#pacman-and-paru)
 
 ## Setup
 ```shell
@@ -14,6 +15,9 @@ cd dotfiles/
 ## Fcitx5
 - Logout then login
 - Fcitx5 Configuration -> Add unikey
+
+## Cutefish sddm theme
+- `sddm-config-editor` -> themes -> cutefish
 
 ## Github CLI
 ```shell

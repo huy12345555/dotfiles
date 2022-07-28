@@ -15,7 +15,7 @@ alias gcl='git clone'
 alias gi='git init'
 alias ga='git add .'
 alias gc='git commit'
-alias gp='git push origin'
+alias gp='git push'
 alias gt='git status'
 alias gd='git diff'
 

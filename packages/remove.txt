@@ -1,6 +1,1 @@
-vim
-system-config-printer
-blueberry
-nano
-lightdm-gtk-greeter
-
+cutefish-screenlocker

@@ -1,8 +1,7 @@
 authy
 nerd-fonts-jetbrains-mono
-ttf-ms-fonts
-bibata-cursor-theme-bin
-nordic-theme 
-lightdm-webkit-theme-aether
+ttf-ms-fonts 
 microsoft-edge-stable-bin
-
+sddm-config-editor-git
+cutefish-cursor-themes-git
+cutefish-gtk-themes-git
