@@ -12,7 +12,6 @@ sudo wrmsr 0x1FC 0xFFFFE
 cp -r $HOME/dotfiles/software/ $HOME
 mkdir $HOME/{Documents,Pictures,Music,Videos}
 mkdir -p $HOME/Downloads/{tmp,Documents,Videos}
-mkdir -p $HOME/workspace/projects/
 
 # Setup nvim
 git clone https://github.com/giatrung2012/nvim $HOME/.config/nvim/
@@ -46,6 +45,7 @@ cd $HOME/Downloads/tmp/
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si 
+paru -S ttf-ms-fonts 
 paru -S - < $HOME/dotfiles/packages/aur.txt
 
 # TLP
@@ -78,4 +78,7 @@ sudo fc-cache -fv
 chsh -s /usr/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 omf install agnoster
+
+# Make web app show
+sudo chmod ugo+rwx /usr/share/applications/
 
