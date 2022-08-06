@@ -18,9 +18,11 @@ alias gc='git commit'
 alias gp='git push'
 alias gt='git status'
 alias gd='git diff'
+alias gpl='git pull'
 
 # trash-cli
 alias del='trash-put'
+alias sdel='sudo trash-put'
 
 # bat
 alias bat='bat --theme Dracula'

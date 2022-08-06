@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Rclone
 rclone sync -i $HOME/Documents/ odrive:docs
 rclone sync -i $HOME/Pictures/ odrive:imgs
@@ -24,4 +22,6 @@ cp $HOME/.config/cutefishos/theme.conf $HOME/dotfiles/.config/cutefishos/
 cp $HOME/.config/cutefishos/locale.conf $HOME/dotfiles/.config/cutefishos/
 cp $HOME/.config/cutefishos/dock_pinned.conf $HOME/dotfiles/.config/cutefishos/
 cp $HOME/.config/kwriterc $HOME/dotfiles/.config/
+cp $HOME/.config/okularrc $HOME/dotfiles/.config/
+cp $HOME/.config/okularpartrc $HOME/dotfiles/.config/
 

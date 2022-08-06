@@ -1,4 +1,3 @@
-msr-tools
 neovim
 git
 base-devel
@@ -20,9 +19,7 @@ lua-language-server
 redshift
 xbindkeys
 playerctl
-gnome-keyring
 libdbusmenu-glib
-appmenu-gtk-module
 exfat-utils
 ntfs-3g
 rclone

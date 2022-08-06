@@ -1,12 +1,13 @@
-#!/bin/sh
-
 sudo pacman -Syyu
-sudo pacman -S --needed - < $HOME/dotfiles/packages/core.txt
 
 # Disable bd brochot
+sudo pacman -S msr-tools
 sudo modprobe msr
 sudo rdmsr 0x1FC
 sudo wrmsr 0x1FC 0xFFFFE
+
+# Core packages
+sudo pacman -S --needed - < $HOME/dotfiles/packages/core.txt
 
 # Setup folders
 cp -r $HOME/dotfiles/software/ $HOME
@@ -45,7 +46,6 @@ cd $HOME/Downloads/tmp/
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si 
-paru -S ttf-ms-fonts 
 paru -S - < $HOME/dotfiles/packages/aur.txt
 
 # TLP
@@ -81,4 +81,7 @@ omf install agnoster
 
 # Make web app show
 sudo chmod ugo+rwx /usr/share/applications/
+
+# Stuhack
+git clone https://github.com/isanchop/stuhack.git $HOME/Downloads/tmp/stuhack
 
