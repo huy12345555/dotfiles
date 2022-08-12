@@ -109,15 +109,19 @@ Word Completion Remove Tail=true
 
 [MainWindow]
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAAxcAAAGuAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAAw0AAAHHAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-eDP-1 Height 1366x768=480
-eDP-1 Width 1366x768=791
-eDP-1 XPosition 1366x768=372
-eDP-1 YPosition 1366x768=164
+eDP-1 Height 1366x768=505
+eDP-1 Width 1366x768=781
+eDP-1 XPosition 1366x768=328
+eDP-1 YPosition 1366x768=166
 
 [Recent Files]
 File1[$e]=$HOME/dotfiles/restore.sh
 File2[$e]=$HOME/Downloads/tmp/untitled.txt
+File3[$e]=$HOME/Documents/cpp/string.txt
+File4[$e]=$HOME/workspace/base/eslint-setup.txt
 Name1[$e]=restore.sh
 Name2[$e]=untitled.txt
+Name3[$e]=string.txt
+Name4[$e]=eslint-setup.txt

@@ -11,7 +11,7 @@ sudo pacman -S --needed - < $HOME/dotfiles/packages/core.txt
 
 # Setup folders
 cp -r $HOME/dotfiles/software/ $HOME
-mkdir $HOME/{Documents,Pictures,Music,Videos}
+mkdir $HOME/{Documents,Pictures,Music,Videos,workspace}
 mkdir -p $HOME/Downloads/{tmp,Documents,Videos}
 
 # Setup nvim

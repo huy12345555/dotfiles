@@ -29,4 +29,5 @@ nomacs
 okular
 kwrite
 ksnip
+gnome-keyring
 
