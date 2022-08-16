@@ -79,9 +79,3 @@ chsh -s /usr/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 omf install agnoster
 
-# Make web app show
-sudo chmod ugo+rwx /usr/share/applications/
-
-# Stuhack
-git clone https://github.com/isanchop/stuhack.git $HOME/Downloads/tmp/stuhack
-
