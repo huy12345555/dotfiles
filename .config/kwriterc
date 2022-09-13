@@ -107,21 +107,24 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
+[KTextEditor::Search]
+Search History=.iml,.classpa
+
 [MainWindow]
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAAw0AAAHHAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAA0sAAAHDAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-eDP-1 Height 1366x768=505
-eDP-1 Width 1366x768=781
-eDP-1 XPosition 1366x768=328
-eDP-1 YPosition 1366x768=166
+eDP-1 Height 1366x768=501
+eDP-1 Width 1366x768=843
+eDP-1 XPosition 1366x768=261
+eDP-1 YPosition 1366x768=160
 
 [Recent Files]
 File1[$e]=$HOME/dotfiles/restore.sh
-File2[$e]=$HOME/Downloads/tmp/untitled.txt
-File3[$e]=$HOME/Documents/cpp/string.txt
-File4[$e]=$HOME/workspace/base/eslint-setup.txt
+File2[$e]=$HOME/Documents/cpp/string.txt
+File3[$e]=$HOME/Documents/linux-vip-pro.md
+File4[$e]=$HOME/Downloads/note
 Name1[$e]=restore.sh
-Name2[$e]=untitled.txt
-Name3[$e]=string.txt
-Name4[$e]=eslint-setup.txt
+Name2[$e]=string.txt
+Name3[$e]=linux-vip-pro.md
+Name4[$e]=note

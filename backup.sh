@@ -5,7 +5,6 @@ rclone sync -i $HOME/Videos/ odrive:videos
 rclone sync -i $HOME/Music/ odrive:music
 
 # Folders
-cp -r $HOME/software/ $HOME/dotfiles/
 cp -r $HOME/.config/htop/ $HOME/dotfiles/.config/
 cp -r $HOME/.config/omf/ $HOME/dotfiles/.config/
 cp -r $HOME/.config/fish/ $HOME/dotfiles/.config/
@@ -22,6 +21,6 @@ cp $HOME/.config/cutefishos/theme.conf $HOME/dotfiles/.config/cutefishos/
 cp $HOME/.config/cutefishos/locale.conf $HOME/dotfiles/.config/cutefishos/
 cp $HOME/.config/cutefishos/dock_pinned.conf $HOME/dotfiles/.config/cutefishos/
 cp $HOME/.config/kwriterc $HOME/dotfiles/.config/
-cp $HOME/.config/okularpartrc $HOME/dotfiles/.config/
 cp $HOME/.config/fcitx5/config $HOME/dotfiles/.config/fcitx5/
+cp $HOME/.config/arkrc $HOME/dotfiles/.config/
 

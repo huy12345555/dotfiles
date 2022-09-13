@@ -10,24 +10,22 @@ sudo wrmsr 0x1FC 0xFFFFE
 sudo pacman -S --needed - < $HOME/dotfiles/packages/core.txt
 
 # Setup folders
-cp -r $HOME/dotfiles/software/ $HOME
+cp -r $HOME/dotfiles/disable-bd-prochot/ $HOME
 mkdir $HOME/{Documents,Pictures,Music,Videos,workspace}
-mkdir -p $HOME/Downloads/{tmp,Documents,Videos}
 
-# Setup nvim
+# Nvim
 git clone https://github.com/giatrung2012/nvim $HOME/.config/nvim/
 
 # Setup disable bd brochot for startup and wakeup
-cd /
-chmod +x $HOME/software/boost
-chmod +x $HOME/software/boost.sh
-chmod +x $HOME/software/gboost.sh
+chmod +x $HOME/disable-bd-prochot/boost-wakup
+chmod +x $HOME/disable-bd-prochot/boost-wakup.sh
+chmod +x $HOME/disable-bd-prochot/boost-startup.sh
 sudo chmod ugo+rwx /lib/systemd/system-sleep/
-mv $HOME/software/boost /lib/systemd/system-sleep/
+mv $HOME/disable-bd-prochot/boost-wakup /lib/systemd/system-sleep/
 sudo chmod ugo+rwx /etc/systemd/system/
-mv $HOME/software/boost.service /etc/systemd/system/
-sudo systemctl enable boost.service
-sudo systemctl start boost.service
+mv $HOME/disable-bd-prochot/boost-startup.service /etc/systemd/system/
+sudo systemctl enable boost-startup.service 
+sudo systemctl start boost-startup.service
 
 # Disable bluetooth
 systemctl stop bluetooth
@@ -42,9 +40,8 @@ git config --global user.name "giatrung2012"
 git config --global core.editor nvim
 
 # Paru
-cd $HOME/Downloads/tmp/
-git clone https://aur.archlinux.org/paru.git
-cd paru
+git clone https://aur.archlinux.org/paru.git $HOME/Downloads/paru/
+cd $HOME/Downloads/paru/
 makepkg -si 
 paru -S - < $HOME/dotfiles/packages/aur.txt
 
@@ -62,11 +59,17 @@ echo -e "\n# Fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fci
 # Remove some packages
 sudo pacman -Rs - < $HOME/dotfiles/packages/remove.txt
 
-# Touchpad
+# Fix touchpad
 sudo cp $HOME/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
 
 # Cutefish sddm theme
-sudo cp -r $HOME/dotfiles/cutefish/ /usr/share/sddm/themes/
+git clone https://github.com/cutefishos/sddm-theme $HOME/Downloads/sddm-theme/
+cd $HOME/Downloads/sddm-theme/
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
 
 # Cutefish cursor
 sudo cp $HOME/dotfiles/index.theme /usr/share/icons/default/
