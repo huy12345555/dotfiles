@@ -1,8 +1,7 @@
 ## Table of Contents
 1. [Setup](#setup)
-2. [Cutefish sddm theme](#cutefish-sddm-theme)
-3. [Github CLI](#github-cli)
-4. [Pacman & paru](#pacman-and-paru)
+2. [Github CLI](#github-cli)
+3. [Pacman & paru](#pacman-and-paru)
 
 ## Setup
 ```shell
@@ -10,9 +9,6 @@ git clone https://github.com/giatrung2012/dotfiles
 cd dotfiles/
 ./restore.sh
 ```
-
-## Cutefish sddm theme
-- `sddm-config-editor` -> themes -> cutefish
 
 ## Github CLI
 ```shell
