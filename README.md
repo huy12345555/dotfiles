@@ -7,7 +7,7 @@
 ```shell
 git clone https://github.com/giatrung2012/dotfiles
 cd dotfiles/
-./restore.sh
+./setup.sh
 ```
 
 ## Github CLI

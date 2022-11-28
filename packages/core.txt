@@ -1,7 +1,6 @@
 neovim
 git
 base-devel
-tlp
 github-cli
 htop
 bash-language-server

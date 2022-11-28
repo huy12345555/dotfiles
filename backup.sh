@@ -1,8 +1,8 @@
 # Rclone
-rclone sync -i $HOME/Documents/ odrive:docs
-rclone sync -i $HOME/Pictures/ odrive:imgs
-rclone sync -i $HOME/Videos/ odrive:videos
-rclone sync -i $HOME/Music/ odrive:music
+rclone sync $HOME/Documents/ gdrive:Documents
+rclone sync $HOME/Pictures/ gdrive:Pictures
+rclone sync $HOME/Videos/ gdrive:Videos
+rclone sync $HOME/Music/ gdrive:Music
 
 # Folders
 cp -r $HOME/.config/htop/ $HOME/dotfiles/.config/

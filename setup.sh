@@ -1,13 +1,13 @@
-sudo pacman -Syyu
+sudo pacman -Syyu --noconfirm
 
 # Disable bd brochot
-sudo pacman -S msr-tools
+sudo pacman -S msr-tools --noconfirm
 sudo modprobe msr
 sudo rdmsr 0x1FC
 sudo wrmsr 0x1FC 0xFFFFE
 
 # Core packages
-sudo pacman -S --needed - < $HOME/dotfiles/packages/core.txt
+sudo pacman -S --needed - < $HOME/dotfiles/packages/core.txt --noconfirm
 
 # Setup folders
 cp -r $HOME/dotfiles/disable-bd-prochot/ $HOME
@@ -28,8 +28,8 @@ sudo systemctl enable boost-startup.service
 sudo systemctl start boost-startup.service
 
 # Disable bluetooth
-systemctl stop bluetooth
-systemctl disable bluetooth
+sudo systemctl stop bluetooth
+sudo systemctl disable bluetooth
 
 # NetworkManager
 echo -e "\n[device]\nwifi.scan-rand-mac-address=no" | sudo tee -a /etc/NetworkManager/NetworkManager.conf > /dev/null
@@ -43,11 +43,7 @@ git config --global core.editor nvim
 git clone https://aur.archlinux.org/paru.git $HOME/Downloads/paru/
 cd $HOME/Downloads/paru/
 makepkg -si 
-paru -S - < $HOME/dotfiles/packages/aur.txt
-
-# TLP
-sudo systemctl enable tlp.service
-sudo systemctl start tlp.service
+paru -S - < $HOME/dotfiles/packages/aur.txt --noconfirm
 
 # Config
 cp -r $HOME/dotfiles/.config/ $HOME
@@ -57,7 +53,7 @@ cp $HOME/dotfiles/.xbindkeysrc $HOME
 echo -e "\n# Fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx" | sudo tee -a /etc/environment > /dev/null
 
 # Remove some packages
-sudo pacman -Rs - < $HOME/dotfiles/packages/remove.txt
+sudo pacman -Rs - < $HOME/dotfiles/packages/remove.txt --noconfirm
 
 # Fix touchpad
 sudo cp $HOME/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
@@ -81,4 +77,3 @@ sudo fc-cache -fv
 chsh -s /usr/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 omf install agnoster
-
