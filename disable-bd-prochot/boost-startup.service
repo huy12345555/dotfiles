@@ -1,8 +1,8 @@
 [Unit]
-Description=Disable-bd-prochot
+Description=Disable bd prochot
  
 [Service]
-ExecStart=/home/giatrung2012/disable-bd-prochot/boost-startup.sh
+ExecStart=/home/giatrung2012/dotfiles/disable-bd-prochot/boost-startup.sh
  
 [Install]
 WantedBy=multi-user.target

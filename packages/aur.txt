@@ -1,7 +1,0 @@
-ttf-ms-fonts
-authy
-nerd-fonts-jetbrains-mono
-microsoft-edge-stable-bin
-cutefish-cursor-themes-git
-cutefish-gtk-themes-git
-

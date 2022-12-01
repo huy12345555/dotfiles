@@ -1,5 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
-sudo wrmsr 0x1FC 0xFFFFE 
+sudo modprobe msr
+r=`sudo rdmsr 0x1FC`
+s='0x'$r'' 
+f=$(($s&0xFFFFE))
+sudo wrmsr 0x1FC "obase=16;$f"|bc
 
 exit 0
+

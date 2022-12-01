@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
 case $1 in
     pre) ;;
-    post) sh /home/giatrung2012/disable-bd-brochot/boost-wakup.sh ;;
+    post) bash /home/giatrung2012/dotfiles/disable-bd-prochot/boost-wakup.sh ;;
 esac

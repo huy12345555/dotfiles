@@ -5,14 +5,14 @@ eDP-1 XPosition 1366x768=362
 eDP-1 YPosition 1366x768=238
 
 [ExtractDialog]
-DirHistory[$e]=$HOME/Downloads/Documents/,/run/media/giatrung2012/USB Data/,$HOME/Downloads/tmp/,$HOME/workspace/
+DirHistory[$e]=$HOME/Downloads/,$HOME/Downloads/Documents/,/run/media/giatrung2012/USB Data/,$HOME/Downloads/tmp/,$HOME/workspace/
 
 [Extraction]
 closeAfterExtraction=true
 
 [KFileDialog Settings]
 Recent Files[$e]=file:$HOME
-Recent URLs[$e]=file:$HOME/workspace/,file:$HOME/Downloads/Documents/,file:$HOME/Downloads/tmp/,file:///run/media/giatrung2012/USB Data/,file:$HOME/
+Recent URLs[$e]=file:$HOME/workspace/,file:$HOME/,file:$HOME/Downloads/
 detailViewIconSize=16
 
 [MainWindow]
@@ -20,6 +20,9 @@ MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAAArwAAAHCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 StatusBar=Disabled
 ToolBarsMovable=Disabled
+eDP-1=eDP-1
 eDP-1 XPosition 1366x768=286
+eDP-1 XPosition 1366x768 eDP-1=333
 eDP-1 YPosition 1366x768=180
+eDP-1 YPosition 1366x768 eDP-1=161
 splitterSizes=463,232

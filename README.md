@@ -2,6 +2,8 @@
 1. [Setup](#setup)
 2. [Github CLI](#github-cli)
 3. [Pacman & paru](#pacman-and-paru)
+4. [AUR Auto Vote](#aur-auto-vote)
+5. [WARP CLI](#warp-cli)
 
 ## Setup
 ```shell
@@ -19,3 +21,13 @@ gh auth login
 - Uncomment Color, ParallelDownloads & add ILoveCandy in /etc/pacman.conf
 - Uncomment BottomUp in /etc/paru.conf
 
+## AUR Auto Vote
+```shell
+aur-auto-vote username
+```
+
+## WARP CLI
+```shell
+sudo systemctl start warp-svc.service
+warp-cli register
+```

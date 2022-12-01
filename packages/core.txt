@@ -2,8 +2,7 @@ neovim
 git
 base-devel
 github-cli
-htop
-bash-language-server
+btop
 neofetch
 vlc
 fish
@@ -14,8 +13,6 @@ ttf-jetbrains-mono
 xclip
 fzf
 lsd
-lua-language-server
-redshift
 xbindkeys
 playerctl
 libdbusmenu-glib
@@ -25,8 +22,7 @@ rclone
 bat
 ark
 nomacs
-okular
-kwrite
+kate
 ksnip
 gnome-keyring
 cmake
@@ -35,4 +31,7 @@ qt5-base
 qt5-declarative
 qt5-quickcontrols2
 qt5-tools
+bc
+npm
+unzip
 
