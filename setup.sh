@@ -43,10 +43,13 @@ paru -S ttf-ms-fonts authy nerd-fonts-jetbrains-mono microsoft-edge-stable-bin c
 
 # LunarVim
 LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+trash-put ~/.config/lvim/
+git clone https://github.com/giatrung2012/lvim ~/.config/lvim/
 
 # Config
 cp -r ~/dotfiles/.config/ ~/
 cp ~/dotfiles/{.xbindkeysrc,.gitconfig} ~/
+sudo cp ~/dotfiles/pacman.conf /etc/
 
 # Fcitx5
 echo -e "\n# Fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx" | sudo tee -a /etc/environment > /dev/null
@@ -68,6 +71,14 @@ sudo cp ~/dotfiles/index.theme /usr/share/icons/default/
 
 # Fonts
 sudo fc-cache -fv
+
+# WARP CLI
+sudo systemctl start warp-svc.service
+warp-cli register
+sudo systemctl stop warp-svc.service
+
+# AUR Auto Vote
+aur-auto-vote giatrung2012
 
 # Fish
 chsh -s /usr/bin/fish
