@@ -34,4 +34,8 @@ qt5-tools
 bc
 npm
 unzip
+unrar
+zip
+fd
+gnome-disk-utility
 

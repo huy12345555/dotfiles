@@ -4,20 +4,23 @@ StatusBar=Disabled
 eDP-1 XPosition 1366x768=362
 eDP-1 YPosition 1366x768=238
 
+[CreateDialog]
+LastMimeType=application/zip
+
 [ExtractDialog]
-DirHistory[$e]=$HOME/Downloads/,$HOME/Downloads/Documents/,/run/media/giatrung2012/USB Data/,$HOME/Downloads/tmp/,$HOME/workspace/
+DirHistory[$e]=$HOME/Downloads/Documents/nlhdt/,$HOME/Documents/dai-cuong/tu-tuong-hcm-collection/,$HOME/Downloads/Documents/tqhdl/,$HOME/Downloads/Documents/ptdlvbvdlw/,$HOME/Downloads/Documents/ltp/,$HOME/Downloads/Documents/nmtntt/,$HOME/Downloads/Documents/kpdl/,$HOME/Downloads/Documents/dtdm/,$HOME/Downloads/Documents/ltj/,$HOME/Downloads/Documents/ptdll/
 
 [Extraction]
 closeAfterExtraction=true
 
 [KFileDialog Settings]
 Recent Files[$e]=file:$HOME
-Recent URLs[$e]=file:$HOME/workspace/,file:$HOME/,file:$HOME/Downloads/
+Recent URLs[$e]=file:$HOME/workspace/,file:$HOME/,file:$HOME/Downloads/,file:$HOME/Documents/dai-cuong/tu-tuong-hcm-collection/,file:$HOME/Downloads/Documents/nlhdt/
 detailViewIconSize=16
 
 [MainWindow]
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAArwAAAHCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAA44AAAHOAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 StatusBar=Disabled
 ToolBarsMovable=Disabled
 eDP-1=eDP-1
@@ -25,4 +28,4 @@ eDP-1 XPosition 1366x768=286
 eDP-1 XPosition 1366x768 eDP-1=333
 eDP-1 YPosition 1366x768=180
 eDP-1 YPosition 1366x768 eDP-1=161
-splitterSizes=463,232
+splitterSizes=603,302

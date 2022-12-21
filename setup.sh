@@ -11,7 +11,7 @@ echo "$r"" write to ""reg 0x1FC"
 echo "BD PROCHOT off."
 
 # Core packages
-sudo pacman -S --needed - < ~/dotfiles/packages/core.txt --noconfirm
+sudo pacman -S - < ~/dotfiles/packages/core.txt --needed --noconfirm 
 
 # Setup folders
 # mkdir ~/{Documents,Pictures,Music,Videos,workspace}
@@ -36,10 +36,10 @@ sudo systemctl disable bluetooth
 echo -e "\n[device]\nwifi.scan-rand-mac-address=no" | sudo tee -a /etc/NetworkManager/NetworkManager.conf > /dev/null
 
 # Paru
-git clone https://aur.archlinux.org/paru.git ~/temp/paru/
-cd ~/temp/paru/
+git clone https://aur.archlinux.org/paru-bin.git ~/temp/paru-bin/
+cd ~/temp/paru-bin/
 makepkg -si
-paru -S ttf-ms-fonts authy nerd-fonts-jetbrains-mono microsoft-edge-stable-bin cutefish-gtk-themes-git cutefish-cursor-themes-git aur-auto-vote-git redshift-minimal cloudflare-warp-bin topgrade  
+cat ~/dotfiles/packages/aur.txt | xargs paru -S --needed --noconfirm
 
 # LunarVim
 LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
@@ -59,18 +59,15 @@ sudo cp ~/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
 
 # Cutefish sddm theme
 git clone https://github.com/cutefishos/sddm-theme ~/temp/sddm-theme/
-cd ~/Downloads/sddm-theme/
+cd ~/temp/sddm-theme/
 mkdir build
 cd build
 cmake ..
 make
 sudo make install
 
-# Cutefish cursor theme
-sudo cp ~/dotfiles/index.theme /usr/share/icons/default/
-
 # Fonts
-sudo fc-cache -fv
+sudo fc-cache -f
 
 # WARP CLI
 sudo systemctl start warp-svc.service
@@ -78,7 +75,7 @@ warp-cli register
 sudo systemctl stop warp-svc.service
 
 # AUR Auto Vote
-aur-auto-vote giatrung2012
+sudo systemctl enable aur-auto-vote.timer
 
 # Fish
 chsh -s /usr/bin/fish
