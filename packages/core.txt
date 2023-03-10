@@ -37,5 +37,9 @@ unzip
 unrar
 zip
 fd
-gnome-disk-utility
+ttf-jetbrains-mono-nerd
+libayatana-appindicator
+appmenu-gtk-module
+pacman-contrib
+ufw
 

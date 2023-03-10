@@ -6,7 +6,7 @@ Show Menu Bar=true
 Show Status Bar=true
 Show Tab Bar=true
 Show Url Nav Bar=false
-Show welcome view for new window=true
+Show welcome view for new window=false
 
 [General Options]
 ShowMenuBar=true
@@ -128,16 +128,16 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Search History=gtk,.iml,.classpa
+Search History=full,.idea,textview15,et_id,textview16,textview17,17,zip,gtk,.iml,.classpa
 
 [MainWindow]
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAAA0sAAAHDAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 eDP-1 Height 1366x768=501
-eDP-1 Height 1366x768 eDP-1=551
+eDP-1 Height 1366x768 eDP-1=714
 eDP-1 Width 1366x768=843
-eDP-1 Width 1366x768 eDP-1=801
+eDP-1 Width 1366x768 eDP-1=683
 eDP-1 XPosition 1366x768=261
 eDP-1 YPosition 1366x768=160
 

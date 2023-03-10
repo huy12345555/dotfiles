@@ -11,5 +11,5 @@ cp -r ~/.config/{btop,omf,fish,ksnip,nomacs,Kingsoft,fcitx5,cutefishos} ~/dotfil
 cp ~/{.xbindkeysrc,.gitconfig} ~/dotfiles/
 cp /etc/X11/xorg.conf.d/40-libinput.conf ~/dotfiles/
 cp /etc/pacman.conf ~/dotfiles/
-cp ~/.config/{kwriterc,arkrc,topgrade.toml} ~/dotfiles/.config/
+cp ~/.config/{kwriterc,arkrc} ~/dotfiles/.config/
 

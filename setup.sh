@@ -28,10 +28,6 @@ cp ~/dotfiles/disable-bd-prochot/boost-startup.service /etc/systemd/system/
 sudo chmod 755 /etc/systemd/system/
 sudo systemctl enable boost-startup.service 
 
-# Disable bluetooth
-sudo systemctl stop bluetooth
-sudo systemctl disable bluetooth
-
 # NetworkManager
 echo -e "\n[device]\nwifi.scan-rand-mac-address=no" | sudo tee -a /etc/NetworkManager/NetworkManager.conf > /dev/null
 
@@ -74,8 +70,17 @@ sudo systemctl start warp-svc.service
 warp-cli register
 sudo systemctl stop warp-svc.service
 
-# AUR Auto Vote
-sudo systemctl enable aur-auto-vote.timer
+# Clear pacman cache
+sudo systemctl enable paccache.timer
+
+# Firewall
+sudo systemctl start ufw.service
+sudo systemctl enable ufw.service
+sudo ufw default deny
+sudo ufw allow from 192.168.0.0/24
+sudo ufw allow Deluge
+sudo ufw limit ssh
+sudo ufw enable
 
 # Fish
 chsh -s /usr/bin/fish

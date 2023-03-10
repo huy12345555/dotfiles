@@ -1,7 +1,6 @@
 authy 
-nerd-fonts-jetbrains-mono 
 microsoft-edge-stable-bin 
-cutefish-gtk-themes-git 
+cutefish-gtk-themes-git
 cutefish-cursor-themes-git 
 aur-auto-vote-git 
 redshift-minimal 

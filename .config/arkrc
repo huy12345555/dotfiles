@@ -8,14 +8,14 @@ eDP-1 YPosition 1366x768=238
 LastMimeType=application/zip
 
 [ExtractDialog]
-DirHistory[$e]=$HOME/Downloads/Documents/nlhdt/,$HOME/Documents/dai-cuong/tu-tuong-hcm-collection/,$HOME/Downloads/Documents/tqhdl/,$HOME/Downloads/Documents/ptdlvbvdlw/,$HOME/Downloads/Documents/ltp/,$HOME/Downloads/Documents/nmtntt/,$HOME/Downloads/Documents/kpdl/,$HOME/Downloads/Documents/dtdm/,$HOME/Downloads/Documents/ltj/,$HOME/Downloads/Documents/ptdll/
+DirHistory[$e]=$HOME/,/tmp/MicrosoftEdgeDownloads/82ce1f18-77ef-4e89-ad2d-0697903eae9d/,$HOME/Downloads/,/run/media/giatrung2012/Windows/Users/giatrung2012/software/,$HOME/Downloads/Compressed/,$HOME/Downloads/Documents/selective/,$HOME/Downloads/Documents/,$HOME/Downloads/Documents/OneDrive_1_2-4-2023/,$HOME/Downloads/Documents/ptuddd/,$HOME/Downloads/Documents/cong-nghe-thong-tin/
 
 [Extraction]
 closeAfterExtraction=true
 
 [KFileDialog Settings]
 Recent Files[$e]=file:$HOME
-Recent URLs[$e]=file:$HOME/workspace/,file:$HOME/,file:$HOME/Downloads/,file:$HOME/Documents/dai-cuong/tu-tuong-hcm-collection/,file:$HOME/Downloads/Documents/nlhdt/
+Recent URLs[$e]=file:$HOME/workspace/,file:$HOME/,file:$HOME/Downloads/,file:$HOME/Downloads/Documents/,file:$HOME/Downloads/Compressed/,file:///run/media/giatrung2012/Windows/Users/giatrung2012/software/
 detailViewIconSize=16
 
 [MainWindow]
@@ -25,7 +25,7 @@ StatusBar=Disabled
 ToolBarsMovable=Disabled
 eDP-1=eDP-1
 eDP-1 XPosition 1366x768=286
-eDP-1 XPosition 1366x768 eDP-1=333
+eDP-1 XPosition 1366x768 eDP-1=228
 eDP-1 YPosition 1366x768=180
-eDP-1 YPosition 1366x768 eDP-1=161
+eDP-1 YPosition 1366x768 eDP-1=155
 splitterSizes=603,302
