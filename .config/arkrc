@@ -8,17 +8,19 @@ eDP-1 YPosition 1366x768=238
 LastMimeType=application/zip
 
 [ExtractDialog]
-DirHistory[$e]=$HOME/,/tmp/MicrosoftEdgeDownloads/82ce1f18-77ef-4e89-ad2d-0697903eae9d/,$HOME/Downloads/,/run/media/giatrung2012/Windows/Users/giatrung2012/software/,$HOME/Downloads/Compressed/,$HOME/Downloads/Documents/selective/,$HOME/Downloads/Documents/,$HOME/Downloads/Documents/OneDrive_1_2-4-2023/,$HOME/Downloads/Documents/ptuddd/,$HOME/Downloads/Documents/cong-nghe-thong-tin/
+DirHistory[$e]=$HOME/workspace/,$HOME/Downloads/,$HOME/workspace/utilities/,$HOME/Documents/nguyen-ly-he-dieu-hanh/,$HOME/,/tmp/MicrosoftEdgeDownloads/82ce1f18-77ef-4e89-ad2d-0697903eae9d/,/run/media/giatrung2012/Windows/Users/giatrung2012/software/,$HOME/Downloads/Compressed/,$HOME/Downloads/Documents/selective/,$HOME/Downloads/Documents/
 
 [Extraction]
 closeAfterExtraction=true
 
 [KFileDialog Settings]
 Recent Files[$e]=file:$HOME
-Recent URLs[$e]=file:$HOME/workspace/,file:$HOME/,file:$HOME/Downloads/,file:$HOME/Downloads/Documents/,file:$HOME/Downloads/Compressed/,file:///run/media/giatrung2012/Windows/Users/giatrung2012/software/
+Recent URLs[$e]=file:$HOME/workspace/,file:$HOME/,file:$HOME/Downloads/,file:$HOME/Downloads/Documents/,file:$HOME/Downloads/Compressed/,file:///run/media/giatrung2012/Windows/Users/giatrung2012/software/,file:$HOME/Documents/nguyen-ly-he-dieu-hanh/,file:$HOME/workspace/utilities/
 detailViewIconSize=16
 
 [MainWindow]
+1366x768 screen: XPosition=177
+1366x768 screen: YPosition=157
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAAA44AAAHOAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 StatusBar=Disabled

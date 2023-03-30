@@ -5,4 +5,5 @@ cutefish-cursor-themes-git
 aur-auto-vote-git 
 redshift-minimal 
 cloudflare-warp-bin 
+fish-fzf
 
