@@ -10,16 +10,16 @@ sudo wrmsr 0x1FC "obase=16;$f"|bc
 echo "$r"" write to ""reg 0x1FC"
 echo "BD PROCHOT off."
 
-# Core packages
-# sudo pacman -S - < ~/dotfiles/packages/core.txt --needed --noconfirm
-sudo pacman -S neovim git base-devel ufw fish trash-cli --needed --noconfirm
+# Packages
+# sudo pacman -Rs - < ~/dotfiles/packages/remove.txt --noconfirm
+sudo pacman -S - < ~/dotfiles/packages/core.txt --needed --noconfirm
 
-# Setup folders
-# mkdir ~/{Documents,Pictures,Music,Videos,workspace}
-mkdir ~/temp
-# ln -s /run/media/giatrung2012/Windows/Users/giatrung2012/{Documents,Pictures,Downloads,Music,Videos,workspace} ~/
+# Folders
+mkdir ~/tmp
+trash-put ~/{Documents,Pictures,Downloads,Music,Videos}
+ln -s /run/media/giatrung2012/Windows/Users/giatrung2012/{Documents,Pictures,Downloads,Music,Videos,workspace} ~/
 
-# Setup disable bd prochot for startup and wakeup
+# Disable bd prochot on startup and wakeup
 chmod +x ~/dotfiles/disable-bd-prochot/{boost-wakup,boost-wakup.sh,boost-startup.sh}
 sudo chmod 777 /lib/systemd/system-sleep/
 cp ~/dotfiles/disable-bd-prochot/boost-wakup /lib/systemd/system-sleep/
@@ -39,37 +39,16 @@ makepkg -si
 cat ~/dotfiles/packages/aur.txt | xargs paru -S --needed --noconfirm
 
 # LunarVim
-LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-trash-put ~/.config/lvim/
+LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
+trash-put ~/.config/lvim
 git clone https://github.com/giatrung2012/lvim ~/.config/lvim/
 
 # Config
 cp -r ~/dotfiles/.config/ ~/
 cp ~/dotfiles/.gitconfig ~/
-sudo cp ~/dotfiles/pacman.conf /etc/
 
 # Fcitx5
 echo -e "\n# Fcitx5\nGTK_IM_MODULE=fcitx\nQT_IM_MODULE=fcitx\nXMODIFIERS=@im=fcitx" | sudo tee -a /etc/environment > /dev/null
-
-# Fix touchpad
-# sudo cp ~/dotfiles/40-libinput.conf /etc/X11/xorg.conf.d/
-
-# Cutefish sddm theme
-# git clone https://github.com/cutefishos/sddm-theme ~/temp/sddm-theme/
-# cd ~/temp/sddm-theme/
-# mkdir build
-# cd build
-# cmake ..
-# make
-# sudo make install
-
-# Fonts
-# sudo fc-cache -f
-
-# WARP CLI
-sudo systemctl start warp-svc.service
-warp-cli register
-sudo systemctl stop warp-svc.service
 
 # Clear pacman cache
 sudo systemctl enable paccache.timer
@@ -83,11 +62,17 @@ sudo ufw allow Deluge
 sudo ufw limit ssh
 sudo ufw enable
 
+# GNOME
+gnome-extensions enable $(gnome-extensions list | grep -m 1 appindicatorsupport)
+
+# Fonts
+sudo fc-cache -f
+
 # Fish
 chsh -s /usr/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 omf install agnoster
 
 # Remove temp folder
-trash-put ~/temp/
+trash-put ~/tmp/
 

@@ -25,7 +25,7 @@ alias del='trash-put'
 alias sdel='sudo trash-put'
 
 # bat
-alias bat='bat --theme Dracula'
+alias bat='bat --theme OneHalfDark'
 
 # LunarVim
 set PATH /home/giatrung2012/.local/bin $PATH
@@ -33,6 +33,4 @@ set PATH /home/giatrung2012/.local/bin $PATH
 # WARP CLI
 alias warp-on='sudo systemctl start warp-svc.service && warp-cli connect'
 alias warp-off='warp-cli disconnect && sudo systemctl stop warp-svc.service'
-alias warp-reset='warp-cli disconnect && warp-cli connect'
-alias warp-status='warp-cli status'
 

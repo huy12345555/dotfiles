@@ -4,5 +4,7 @@ rclone sync ~/Pictures/ gdrive:Pictures
 rclone sync ~/Videos/ gdrive:Videos
 rclone sync ~/Music/ gdrive:Music
 
-# Folders
-cp -r ~/.config/{btop,fish,Kingsoft,fcitx5} ~/dotfiles/.config/
+# Config
+cp ~/.gitconfig ~/dotfiles/
+cp -r ~/.config/{btop,fish,fcitx5} ~/dotfiles/.config/
+

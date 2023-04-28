@@ -1,9 +1,8 @@
-authy 
+authy
 microsoft-edge-stable-bin 
-cutefish-gtk-themes-git
-cutefish-cursor-themes-git 
 aur-auto-vote-git 
 redshift-minimal 
 cloudflare-warp-bin 
 fish-fzf
+ttf-ms-fonts
 

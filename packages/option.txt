@@ -1,5 +1,3 @@
 wps-office
-simplescreenrecorder
 visual-studio-code-bin
-android-studio
 
